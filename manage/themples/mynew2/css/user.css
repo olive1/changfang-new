@@ -1,0 +1,78 @@
+.dating{padding:5px 20px 10px 20px;}
+.dating h4{color:#FA4A4A; margin-top:5px;}
+.dating ul li{float:left; width:330px; border-bottom:1px solid #FFE0E6; margin-bottom:30px;}
+.dating ul li span{padding-right:20px;}
+.dating ul li img{max-width:205px;}
+.reg{border-top:2px solid #d0020e; border-right:1px solid #cccccc; border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; padding:30px 50px 30px 50px;}
+.reg h2{font-size:14px; margin-bottom:5px;}
+.reg .reg_top{border:1px solid #e8e8e8; background-color:#f8f8f8; height:30px; line-height:30px; padding-left:10px;}
+.reg .reg_jt{margin-left:30px; margin-top:-2px;}
+.reg .reg_top font{color:#f05004;}
+.reg .reg_top span{text-align:right;  padding-left:400px; padding-right:5px;}
+.reg .reg_top span a{color:#2953a6;text-decoration:underline; margin-left:10px;}
+.reg .reg_content{color:#666666;}
+.reg .reg_content p{ font-size:14px; padding:10px 20px 10px 200px;}
+.reg .reg_content p:hover{background-color:#fff8f8;}
+.reg .reg_content p input{ border:1px solid #cccccc; height:30px; line-height:30px; font-size:14px; padding:2px 5px 0 5px;}
+.reg .reg_content p input:hover{border-color:#f1ca7f;}
+.reg .reg_content p input.reg_input{width:220px;}
+.reg .reg_content p input.yanzhen{width:80px;}
+.reg .reg_content p span{font-size:12px; color:#f05004;}
+.reg .reg_content .reg_submit{text-align:center; margin-top:20px;}
+.reg .reg_content .reg_submit input{background-image:url(../images/reg_submit.jpg); background-repeat:no-repeat; width:137px; height:34px; cursor:pointer; border:0px;}
+
+.login{border-top:2px solid #d0020e; border-right:1px solid #cccccc; border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; padding:30px 50px 30px 50px;}
+.login h2{font-size:14px; margin-bottom:5px; border-bottom:1px solid #cccccc; padding-bottom:10px;}
+
+.login .login_content{color:#666666;}
+.login .login_content p{ font-size:14px; padding:10px 20px 10px 200px;}
+.login .login_content p:hover{background-color:#fff8f8;}
+.login .login_content p input{ border:1px solid #cccccc; height:30px; line-height:30px; font-size:14px; padding:2px 5px 0 5px;}
+.login .login_content p input:hover{border-color:#f1ca7f;}
+.login .login_content p input.login_input{width:220px;}
+.login .login_content p input.yanzhen{width:80px;}
+.login .login_content p span{font-size:12px; color:#f05004;}
+.login .login_content .login_submit{margin-top:20px; line-height:30px; height:30px; padding-left:200px; text-align:left;}
+.login .login_content .login_submit input{background-image:url(../images/login_submit.jpg); background-repeat:no-repeat; width:100px; height:30px; cursor:pointer; border:0px; float:left;}
+.login .login_content .login_submit a{margin-left:20px;}
+.forget_submit{text-align:center;}
+.forget_submit input{background-image:url(../images/forget_submit.jpg); background-repeat:no-repeat; width:95px; height:29px; cursor:pointer; border:0px;}
+
+.user_left{width:192px; float:left;}
+.user_left_nav{border:1px solid #cccccc; width:188px; text-align:center; padding-bottom:10px;}
+.user_left_nav h3{border-top:1px solid #ff7c06; border-bottom:1px solid #f9eded; color:#ff7c06; background-color:#fff7f5; margin-top:20px; }
+.user_left_nav ul{padding-top:5px; }
+.user_left_nav ul li{height:25px; line-height:25px; text-align:center;}
+
+.user_right{ width:760px; float:right; border:1px solid #cccccc;}
+.user_right h2{margin:15px; padding:3px 0 3px 15px; border-bottom:1px solid #cccccc; font-size:12px; font-weight:normal;}
+.user_r_con{padding:0 10px 10px 10px;}
+.user_r_con ul{padding-left:40px;}
+.user_r_con ul li{height:35px; line-height:35px; margin-top:10px;}
+.user_r_con ul li span{display:block; padding-left:10px; width:80px; text-align:right; float:left;}
+.user_r_con ul li input{ border:1px solid #cccccc; height:30px; line-height:30px; font-size:14px; padding:2px 5px 0 5px;}
+.user_r_con ul li input:hover{border-color:#f1ca7f;}
+.user_r_sub{margin-top:20px; margin-left:100px;}
+.user_r_sub input{margin:2px 5px 2px 15px; padding:2px 5px 2px 5px;}
+.contact_2{margin-top:20px;}
+.password_3{margin-top:20px;}
+
+.order_manage{padding:5px 5px 5px 30px; font-size:12px;}
+.order_manage th.order_td,td.order_td{border-right:1px solid #cccccc; border-bottom:1px solid #cccccc; padding-left:5px; font-size:12px; height:25px; line-height:25px;}
+.order_manage td.no_bottom{border-bottom:0px;}
+
+.co_manage{padding:5px 5px 5px 30px;}
+
+.co_img img{max-width:260px; max-height:260px;}
+.co_more a{text-decoration:underline; margin-right:10px;}
+.co_list{border-bottom:1px solid #cccccc; margin-bottom:10px;}
+.co_text{line-height:180%; padding-left:20px;}
+.co_text p{margin:5px 0 3px 0;}
+
+
+
+
+
+
+
+

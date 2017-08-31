@@ -1,0 +1,25 @@
+/**¸¡²ã **/
+.fudong{ display:none; position: fixed; top: 0px; left:0px; width: 100%; height: 100%; _position: absolute; _top: expression(eval(document.documentElement.scrollTop+96));}
+.fudongbg{position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #000; filter: Alpha(opacity=50); opacity: 0.5}
+.fudongbody{background-image:url(../images/detailfudong.jpg); background-repeat:no-repeat; height: 403px; width: 610px; margin: 10% auto; position: relative;}
+.fudongclose{padding:5px 15px 0 0; text-align:right;}
+.fudongclose img{cursor:pointer;}
+.fudongcontent{margin-top:40px; text-align:left; padding:58px; color:#999999; line-height:200%; }
+.fudongcontent div{margin-top:10px;}
+.fudonga{color:#000000; font-size:16px;}
+.fudonga span{font-weight:bold; color:#fa4a4a;}
+.fudongc span{color:#ff6600; font-size:14px; font-weight:bold; padding:10px 0 10px 0;}
+.order_phonexx{width:185px; height:41px; line-height:30px; border:0px; background-image:url(../images/fudonginput.jpg); background-repeat:no-repeat; padding:0 10px 0 10px; font-size:22px;}
+
+
+.isclose{ display:none; border:5px solid #b3b3b3; width:270px; position: absolute;_position: absolute; left:100px; margin:60px 0 0 50px; background-color:#ffffff;}
+.isclosecontent{ padding:5px 10px 5px 10px;text-align:left;}
+.isclosea{background-color:#f8f8f8; height:28px; line-height:28px; }
+.isclosea img{cursor:pointer;}
+.isclose ul{padding:10px 0 10px 0; margin:0px;}
+.isclose ul li{color:#ad0600;}
+.isclosec{border-top:1px solid #cccccc; padding:10px;}
+.isclosed{ text-align:center; padding-left:50px;}
+.isclosed span{text-align:center; margin-left:10px; width:52px; height:24px; line-height:24px; background-image:url(../images/isclosebg.jpg); background-repeat:no-repeat;  cursor:pointer;display:block; }
+
+/**¸¡²ã over**/
