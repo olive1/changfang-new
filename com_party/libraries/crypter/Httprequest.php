@@ -59,7 +59,7 @@ class Httprequest
 
 		curl_setopt($curl, CURLOPT_HEADER, 0); // 过滤HTTP头
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1); // 显示输出结果
-		curl_setopt($curl, CURLOPT_TIMEOUT,$this->curl_timeout);
+		curl_setopt($curl, CURLOPT_TIMEOUT, $timeout);
 		curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false); //SSL证书认证
 		curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 2); //严格认证
 		$content 	= curl_exec($curl);
