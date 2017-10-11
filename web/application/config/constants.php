@@ -65,6 +65,10 @@ define('LUMN_THEMPLES_FLODER',                  'themples/'.LUMN_THEMPLE);//模�
 define('LUMN_TIME_YZM',                              200); //验证码时间
 define('LUMN_fabu_x_limit',                          50);  //发布 限制个数 0或false表示不限制
 
+define('WX_TOKEN',		'lumeng');
+define('WX_AESKEY',	'NcVSrbibfa7x9qi9Brwgh80lIZnbiRlYOX4IjimlLVX');
+define('WX_APPID',		'wx15198ac62b728599');
+define('WX_APPSECRET',	'e44f98eb0779cbe48ff57f119bf835a4');
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

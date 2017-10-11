@@ -14,14 +14,8 @@
 | path to your installation.
 |
 */
-$get_url       = $_SERVER['HTTP_HOST'];
-$get_url       = explode('.', $get_url);
-$config_prefix = $get_url['0'];
+$config['base_url']	= 'http://www.triptt.com/weixin/';
 
-
-//$config['base_url']	= 'http://'.$config_prefix.'.changfang.com';
-$config['base_url']	= 'http://www.changfang.com';
-$config['base_url_admin'] = $config['base_url'].'admin/';
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -32,7 +26,7 @@ $config['base_url_admin'] = $config['base_url'].'admin/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php/';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -112,7 +106,7 @@ $config['enable_hooks'] = FALSE;
 | http://codeigniter.com/user_guide/general/creating_libraries.html
 |
 */
-$config['subclass_prefix'] = 'LM_';
+$config['subclass_prefix'] = 'MY_';
 
 
 /*
@@ -186,7 +180,7 @@ $config['directory_trigger']	= 'd'; // experimental not currently in use
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
+$config['log_threshold'] = array(1,2,3);
 
 /*
 |--------------------------------------------------------------------------
@@ -230,7 +224,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = 'LUMENG';
+$config['encryption_key'] = 'lumeng';
 
 /*
 |--------------------------------------------------------------------------

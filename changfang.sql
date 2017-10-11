@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50520
 File Encoding         : 65001
 
-Date: 2017-08-31 10:53:18
+Date: 2017-10-10 18:29:52
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -55,6 +55,46 @@ INSERT INTO `ci_sessions` VALUES ('01b9b8fe8827979c2825755fde8b27276b87eb0d', '1
 INSERT INTO `ci_sessions` VALUES ('deee560f0af0d0e01397200c8d9770940237a4c8', '127.0.0.1', '', '1503996908', '__ci_last_regenerate|i:1503996640;lm|b:0;');
 INSERT INTO `ci_sessions` VALUES ('1f2ae876f28d8ab51e521d49b78fbbcd3261276c', '127.0.0.1', '', '1503997256', '__ci_last_regenerate|i:1503996963;lm|b:0;user|s:558:\"a:12:{s:8:\"admin_id\";s:1:\"1\";s:10:\"admin_name\";s:8:\"lm_admin\";s:14:\"admin_nickname\";s:6:\"阿猛\";s:14:\"admin_password\";s:32:\"e10adc3949ba59abbe56e057f20f883e\";s:5:\"group\";s:5:\"admin\";s:5:\"yhzid\";s:1:\"0\";s:11:\"purview_mdl\";s:144:\"a:6:{i:0;s:11:\"user/update\";i:1;s:9:\"order/del\";i:2;s:12:\"order/update\";i:3;s:9:\"co/update\";i:4;s:14:\"goods/del_menu\";i:5;s:13:\"goods/del_img\";}\";s:11:\"create_time\";s:10:\"1331018706\";s:11:\"update_time\";i:1503996968;s:5:\"token\";s:32:\"ad02ba6f600d9c57d3d12f02e8644ac6\";s:2:\"ip\";s:14:\"116.255.205.81\";s:14:\"admin_id_class\";s:1:\"0\";}\";');
 INSERT INTO `ci_sessions` VALUES ('1a79f957907c83bf5533775ba52c2cc4b5c34286', '127.0.0.1', '', '1503997620', '__ci_last_regenerate|i:1503997348;lm|s:4:\"open\";user|s:558:\"a:12:{s:8:\"admin_id\";s:1:\"1\";s:10:\"admin_name\";s:8:\"lm_admin\";s:14:\"admin_nickname\";s:6:\"阿猛\";s:14:\"admin_password\";s:32:\"e10adc3949ba59abbe56e057f20f883e\";s:5:\"group\";s:5:\"admin\";s:5:\"yhzid\";s:1:\"0\";s:11:\"purview_mdl\";s:144:\"a:6:{i:0;s:11:\"user/update\";i:1;s:9:\"order/del\";i:2;s:12:\"order/update\";i:3;s:9:\"co/update\";i:4;s:14:\"goods/del_menu\";i:5;s:13:\"goods/del_img\";}\";s:11:\"create_time\";s:10:\"1331018706\";s:11:\"update_time\";i:1503997353;s:5:\"token\";s:32:\"340ade41fd87cfa788c7861f40a1a450\";s:2:\"ip\";s:14:\"116.255.205.81\";s:14:\"admin_id_class\";s:1:\"0\";}\";success|s:12:\"更新成功\";__ci_vars|a:1:{s:7:\"success\";s:3:\"old\";}');
+
+-- ----------------------------
+-- Table structure for `dili_lulu_user`
+-- ----------------------------
+DROP TABLE IF EXISTS `dili_lulu_user`;
+CREATE TABLE `dili_lulu_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `phone` char(20) DEFAULT NULL COMMENT '手机号',
+  `name` char(50) DEFAULT NULL COMMENT '姓名',
+  `privilege` char(50) DEFAULT NULL COMMENT '权限，基地id:1,2,3',
+  `wx_openid` char(50) DEFAULT NULL COMMENT 'openid',
+  `wx_access_token` varchar(255) DEFAULT NULL COMMENT '调用凭证',
+  `wx_expires_in` int(10) DEFAULT NULL COMMENT '超时时间',
+  `wx_refresh_token` varchar(255) DEFAULT NULL COMMENT '用户刷新access_token',
+  `scope` varchar(255) DEFAULT NULL COMMENT '授权的作用域',
+  `created` datetime DEFAULT NULL COMMENT '创建时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `phone` (`phone`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户注册表';
+
+-- ----------------------------
+-- Records of dili_lulu_user
+-- ----------------------------
+INSERT INTO `dili_lulu_user` VALUES ('15', '13817999192', 'aa', null, '1', null, null, null, null, null);
+
+-- ----------------------------
+-- Table structure for `dili_lulu_user_fengxiang`
+-- ----------------------------
+DROP TABLE IF EXISTS `dili_lulu_user_fengxiang`;
+CREATE TABLE `dili_lulu_user_fengxiang` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `phone_old` char(20) COLLATE utf8_unicode_ci NOT NULL COMMENT '分享者',
+  `phone_new` char(20) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '受邀者',
+  `created` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='用户分享表';
+
+-- ----------------------------
+-- Records of dili_lulu_user_fengxiang
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for `lm_admin`
@@ -192,192 +232,194 @@ CREATE TABLE `lm_category` (
   `cat_name` varchar(120) NOT NULL COMMENT '分类名称',
   `parent_id` mediumint(8) unsigned NOT NULL COMMENT '父级ID',
   `order_id` mediumint(8) unsigned NOT NULL COMMENT '排序号',
-  `is_cond` char(1) DEFAULT NULL COMMENT '是否作为条件(判断上级父类)',
+  `is_cond` char(1) DEFAULT NULL COMMENT '是否作为搜索条件',
   `keywords` varchar(50) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`cat_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=251 DEFAULT CHARSET=utf8;
+  `product_seach_name` char(10) DEFAULT NULL COMMENT '商品表中的字段名-默认值cat_id_1',
+  PRIMARY KEY (`cat_id`),
+  KEY `parent_id` (`parent_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=251 DEFAULT CHARSET=utf8 COMMENT='分类表';
 
 -- ----------------------------
 -- Records of lm_category
 -- ----------------------------
-INSERT INTO `lm_category` VALUES ('1', '区域', '0', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('2', '摆放形式', '0', '1', null, '', '');
-INSERT INTO `lm_category` VALUES ('6', '北京', '1', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('7', '上海', '1', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('200', '剧院式', '2', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('201', '课桌式', '2', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('202', '宴会式', '2', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('203', '董事式', '2', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('204', '鱼骨式', '2', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('205', 'U型桌', '2', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('206', '鸡尾酒会', '2', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('207', '回字型', '2', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('208', '阶梯式', '2', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('209', '自助餐', '2', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('210', '会见式', '2', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('211', '星级', '0', '5', null, '', '');
-INSERT INTO `lm_category` VALUES ('212', '1星', '211', '1', null, '1', '');
-INSERT INTO `lm_category` VALUES ('213', '2星', '211', '2', null, '2', '');
-INSERT INTO `lm_category` VALUES ('214', '3星', '211', '3', null, '3', '');
-INSERT INTO `lm_category` VALUES ('215', '4星', '211', '4', null, '4', '');
-INSERT INTO `lm_category` VALUES ('216', '5星', '211', '5', null, '5', '');
-INSERT INTO `lm_category` VALUES ('217', '价格', '0', '2', null, '', '');
-INSERT INTO `lm_category` VALUES ('218', '500元以下', '227', '0', null, '0-500', '');
-INSERT INTO `lm_category` VALUES ('219', '500-1000元', '227', '0', null, '500-1000', '');
-INSERT INTO `lm_category` VALUES ('78', '天津', '1', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('79', '重庆', '1', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('80', '河北', '1', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('81', '山西', '1', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('82', '内蒙古', '1', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('83', '辽宁', '1', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('84', '吉林', '1', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('85', '黄浦', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('86', '卢湾', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('87', '徐汇', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('88', '长宁', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('89', '静安', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('90', '普陀', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('91', '闸北', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('92', '虹口', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('93', '杨浦', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('94', '闵行', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('95', '宝山', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('96', '嘉定', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('97', '浦东', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('98', '金山', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('99', '松江', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('100', '青浦', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('101', '南汇', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('102', '奉贤', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('103', '崇明', '7', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('104', '和平', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('105', '东丽', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('106', '河东', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('107', '西青', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('108', '河西', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('109', '津南', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('110', '南开', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('111', '北辰', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('112', '河北', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('113', '武清', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('114', '红挢', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('115', '塘沽', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('116', '汉沽', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('117', '大港', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('118', '宁河', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('119', '静海', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('120', '宝坻', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('121', '蓟县', '78', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('122', '东城', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('123', '西城', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('124', '崇文', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('125', '宣武', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('126', '朝阳', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('127', '丰台', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('128', '石景山', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('129', '海淀', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('130', '门头沟', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('131', '房山', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('132', '通州', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('133', '顺义', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('134', '昌平', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('135', '大兴', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('136', '平谷', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('137', '怀柔', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('138', '密云', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('139', '延庆', '6', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('140', '人民广场', '85', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('141', '豫园', '85', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('142', '大世界', '85', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('143', '外滩', '85', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('144', '淮海中路', '86', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('145', '打浦桥', '86', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('146', '新天地', '86', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('147', '徐家汇', '87', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('148', '衡山路', '87', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('149', '万体馆', '87', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('150', '上海南站', '87', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('151', '漕河泾', '87', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('152', '中山公园', '88', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('153', '虹桥', '88', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('154', '动物园', '88', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('155', '江苏路', '88', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('156', '虹桥枢纽', '88', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('157', '静安寺', '89', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('158', '长风', '90', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('159', '武宁路', '90', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('160', '长寿路', '90', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('161', '火车站', '91', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('162', '大宁', '91', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('163', '鲁迅公园', '92', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('164', '四川北路', '92', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('165', '北外滩', '92', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('166', '五角场', '93', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('167', '大柏树', '93', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('168', '七宝', '94', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('169', '莘庄', '94', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('170', '虹桥镇', '94', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('171', '牡丹江路', '95', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('172', '花桥', '96', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('173', '安亭', '96', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('174', '嘉定镇', '96', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('175', '陆家嘴', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('176', '张江', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('177', '金桥', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('178', '八佰伴', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('179', '花木', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('180', '源深', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('181', '三林', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('182', '上钢新村', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('183', '世纪公园', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('184', '新国展', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('185', '外高桥', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('186', '杨浦大桥', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('187', '北蔡', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('188', '周浦', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('189', '川沙', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('190', '浦东机场', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('191', '塘桥', '97', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('192', '石化', '98', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('193', '大学城', '99', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('194', '泰晤士', '99', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('195', '松江老区', '99', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('196', '青浦镇', '100', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('197', '惠南镇', '101', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('198', '南桥镇', '102', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('199', '碧海金沙', '102', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('220', '1000-2000元', '227', '0', null, '1000-2000', '');
-INSERT INTO `lm_category` VALUES ('221', '2000-4000元', '227', '0', null, '2000-4000', '');
-INSERT INTO `lm_category` VALUES ('222', '4000-8000元', '227', '0', null, '4000-8000', '');
-INSERT INTO `lm_category` VALUES ('223', '8000-15000元', '227', '0', null, '8000-15000', '');
-INSERT INTO `lm_category` VALUES ('224', '15000-30000元', '227', '0', null, '15000-30000', '');
-INSERT INTO `lm_category` VALUES ('225', '30000元以上', '227', '0', null, '30000-0', '');
-INSERT INTO `lm_category` VALUES ('226', '价格分配', '217', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('227', '价格数值', '217', '0', null, '', '');
-INSERT INTO `lm_category` VALUES ('228', '小时', '226', '0', null, 'pricea', '');
-INSERT INTO `lm_category` VALUES ('229', '半天', '226', '0', null, 'priceb', '');
-INSERT INTO `lm_category` VALUES ('230', '全天', '226', '0', null, 'pricec', '');
-INSERT INTO `lm_category` VALUES ('231', '晚上', '226', '0', null, 'priced', '');
-INSERT INTO `lm_category` VALUES ('232', '全天搭建', '226', '0', null, 'pricee', '');
-INSERT INTO `lm_category` VALUES ('233', '晚上搭建', '226', '0', null, 'pricef', '');
-INSERT INTO `lm_category` VALUES ('234', '人数', '0', '3', null, '', '');
-INSERT INTO `lm_category` VALUES ('235', '面积', '0', '4', null, '', '');
-INSERT INTO `lm_category` VALUES ('236', '30人以下', '234', '0', null, '0-30', '');
-INSERT INTO `lm_category` VALUES ('237', '30-50人', '234', '0', null, '30-50', '');
-INSERT INTO `lm_category` VALUES ('238', '50-100人', '234', '0', null, '50-100', '');
-INSERT INTO `lm_category` VALUES ('239', '100-200人', '234', '0', null, '100-200', '');
-INSERT INTO `lm_category` VALUES ('240', '200-500人', '234', '0', null, '200-500', '');
-INSERT INTO `lm_category` VALUES ('241', '500-1000人', '234', '0', null, '500-1000', '');
-INSERT INTO `lm_category` VALUES ('242', '1000人以上', '234', '0', null, '1000-0', '');
-INSERT INTO `lm_category` VALUES ('243', '30平方米以下', '235', '0', null, '0-30', '');
-INSERT INTO `lm_category` VALUES ('244', '30-50平方米', '235', '0', null, '30-50', '');
-INSERT INTO `lm_category` VALUES ('245', '50-100平方米', '235', '0', null, '50-100', '');
-INSERT INTO `lm_category` VALUES ('246', '100-200平方米', '235', '0', null, '100-200', '');
-INSERT INTO `lm_category` VALUES ('247', '200-500平方米', '235', '0', null, '200-500', '');
-INSERT INTO `lm_category` VALUES ('248', '500-1000平方米', '235', '0', null, '500-1000', '');
-INSERT INTO `lm_category` VALUES ('249', '1000平方米以上', '235', '0', null, '1000-0', '');
-INSERT INTO `lm_category` VALUES ('250', '崇明', '103', '0', null, '', '');
+INSERT INTO `lm_category` VALUES ('1', '区域', '0', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('2', '摆放形式', '0', '1', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('6', '北京', '1', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('7', '上海', '1', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('200', '剧院式', '2', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('201', '课桌式', '2', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('202', '宴会式', '2', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('203', '董事式', '2', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('204', '鱼骨式', '2', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('205', 'U型桌', '2', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('206', '鸡尾酒会', '2', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('207', '回字型', '2', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('208', '阶梯式', '2', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('209', '自助餐', '2', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('210', '会见式', '2', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('211', '星级', '0', '5', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('212', '1星', '211', '1', null, '1', '', null);
+INSERT INTO `lm_category` VALUES ('213', '2星', '211', '2', null, '2', '', null);
+INSERT INTO `lm_category` VALUES ('214', '3星', '211', '3', null, '3', '', null);
+INSERT INTO `lm_category` VALUES ('215', '4星', '211', '4', null, '4', '', null);
+INSERT INTO `lm_category` VALUES ('216', '5星', '211', '5', null, '5', '', null);
+INSERT INTO `lm_category` VALUES ('217', '价格', '0', '2', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('218', '500元以下', '227', '0', null, '0-500', '', null);
+INSERT INTO `lm_category` VALUES ('219', '500-1000元', '227', '0', null, '500-1000', '', null);
+INSERT INTO `lm_category` VALUES ('78', '天津', '1', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('79', '重庆', '1', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('80', '河北', '1', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('81', '山西', '1', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('82', '内蒙古', '1', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('83', '辽宁', '1', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('84', '吉林', '1', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('85', '黄浦', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('86', '卢湾', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('87', '徐汇', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('88', '长宁', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('89', '静安', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('90', '普陀', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('91', '闸北', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('92', '虹口', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('93', '杨浦', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('94', '闵行', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('95', '宝山', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('96', '嘉定', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('97', '浦东', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('98', '金山', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('99', '松江', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('100', '青浦', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('101', '南汇', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('102', '奉贤', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('103', '崇明', '7', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('104', '和平', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('105', '东丽', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('106', '河东', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('107', '西青', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('108', '河西', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('109', '津南', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('110', '南开', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('111', '北辰', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('112', '河北', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('113', '武清', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('114', '红挢', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('115', '塘沽', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('116', '汉沽', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('117', '大港', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('118', '宁河', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('119', '静海', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('120', '宝坻', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('121', '蓟县', '78', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('122', '东城', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('123', '西城', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('124', '崇文', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('125', '宣武', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('126', '朝阳', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('127', '丰台', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('128', '石景山', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('129', '海淀', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('130', '门头沟', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('131', '房山', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('132', '通州', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('133', '顺义', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('134', '昌平', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('135', '大兴', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('136', '平谷', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('137', '怀柔', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('138', '密云', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('139', '延庆', '6', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('140', '人民广场', '85', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('141', '豫园', '85', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('142', '大世界', '85', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('143', '外滩', '85', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('144', '淮海中路', '86', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('145', '打浦桥', '86', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('146', '新天地', '86', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('147', '徐家汇', '87', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('148', '衡山路', '87', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('149', '万体馆', '87', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('150', '上海南站', '87', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('151', '漕河泾', '87', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('152', '中山公园', '88', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('153', '虹桥', '88', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('154', '动物园', '88', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('155', '江苏路', '88', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('156', '虹桥枢纽', '88', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('157', '静安寺', '89', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('158', '长风', '90', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('159', '武宁路', '90', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('160', '长寿路', '90', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('161', '火车站', '91', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('162', '大宁', '91', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('163', '鲁迅公园', '92', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('164', '四川北路', '92', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('165', '北外滩', '92', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('166', '五角场', '93', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('167', '大柏树', '93', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('168', '七宝', '94', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('169', '莘庄', '94', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('170', '虹桥镇', '94', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('171', '牡丹江路', '95', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('172', '花桥', '96', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('173', '安亭', '96', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('174', '嘉定镇', '96', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('175', '陆家嘴', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('176', '张江', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('177', '金桥', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('178', '八佰伴', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('179', '花木', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('180', '源深', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('181', '三林', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('182', '上钢新村', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('183', '世纪公园', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('184', '新国展', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('185', '外高桥', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('186', '杨浦大桥', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('187', '北蔡', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('188', '周浦', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('189', '川沙', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('190', '浦东机场', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('191', '塘桥', '97', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('192', '石化', '98', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('193', '大学城', '99', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('194', '泰晤士', '99', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('195', '松江老区', '99', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('196', '青浦镇', '100', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('197', '惠南镇', '101', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('198', '南桥镇', '102', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('199', '碧海金沙', '102', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('220', '1000-2000元', '227', '0', null, '1000-2000', '', null);
+INSERT INTO `lm_category` VALUES ('221', '2000-4000元', '227', '0', null, '2000-4000', '', null);
+INSERT INTO `lm_category` VALUES ('222', '4000-8000元', '227', '0', null, '4000-8000', '', null);
+INSERT INTO `lm_category` VALUES ('223', '8000-15000元', '227', '0', null, '8000-15000', '', null);
+INSERT INTO `lm_category` VALUES ('224', '15000-30000元', '227', '0', null, '15000-30000', '', null);
+INSERT INTO `lm_category` VALUES ('225', '30000元以上', '227', '0', null, '30000-0', '', null);
+INSERT INTO `lm_category` VALUES ('226', '价格分配', '217', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('227', '价格数值', '217', '0', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('228', '小时', '226', '0', null, 'pricea', '', null);
+INSERT INTO `lm_category` VALUES ('229', '半天', '226', '0', null, 'priceb', '', null);
+INSERT INTO `lm_category` VALUES ('230', '全天', '226', '0', null, 'pricec', '', null);
+INSERT INTO `lm_category` VALUES ('231', '晚上', '226', '0', null, 'priced', '', null);
+INSERT INTO `lm_category` VALUES ('232', '全天搭建', '226', '0', null, 'pricee', '', null);
+INSERT INTO `lm_category` VALUES ('233', '晚上搭建', '226', '0', null, 'pricef', '', null);
+INSERT INTO `lm_category` VALUES ('234', '人数', '0', '3', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('235', '面积', '0', '4', null, '', '', null);
+INSERT INTO `lm_category` VALUES ('236', '30人以下', '234', '0', null, '0-30', '', null);
+INSERT INTO `lm_category` VALUES ('237', '30-50人', '234', '0', null, '30-50', '', null);
+INSERT INTO `lm_category` VALUES ('238', '50-100人', '234', '0', null, '50-100', '', null);
+INSERT INTO `lm_category` VALUES ('239', '100-200人', '234', '0', null, '100-200', '', null);
+INSERT INTO `lm_category` VALUES ('240', '200-500人', '234', '0', null, '200-500', '', null);
+INSERT INTO `lm_category` VALUES ('241', '500-1000人', '234', '0', null, '500-1000', '', null);
+INSERT INTO `lm_category` VALUES ('242', '1000人以上', '234', '0', null, '1000-0', '', null);
+INSERT INTO `lm_category` VALUES ('243', '30平方米以下', '235', '0', null, '0-30', '', null);
+INSERT INTO `lm_category` VALUES ('244', '30-50平方米', '235', '0', null, '30-50', '', null);
+INSERT INTO `lm_category` VALUES ('245', '50-100平方米', '235', '0', null, '50-100', '', null);
+INSERT INTO `lm_category` VALUES ('246', '100-200平方米', '235', '0', null, '100-200', '', null);
+INSERT INTO `lm_category` VALUES ('247', '200-500平方米', '235', '0', null, '200-500', '', null);
+INSERT INTO `lm_category` VALUES ('248', '500-1000平方米', '235', '0', null, '500-1000', '', null);
+INSERT INTO `lm_category` VALUES ('249', '1000平方米以上', '235', '0', null, '1000-0', '', null);
+INSERT INTO `lm_category` VALUES ('250', '崇明', '103', '0', null, '', '', null);
 
 -- ----------------------------
 -- Table structure for `lm_cj_fabu_x`

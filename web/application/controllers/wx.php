@@ -33,7 +33,7 @@ class Wx extends CI_Controller
         //微信配置验证 begin
         $echostr        = $this->input->get_post("echostr");
         $this->db->insert('lulu_wx_log', array('content'=>'1 原POST', 'post_data'=>'-'.json_encode($_GET), 'created'=>date('Y-m-d H:i:s')));
-        //echo $echostr;exit;//这里开启时用于验证微信，不用下面的验证了（登录微信公众平台，配置URL，启用时验证）
+        echo $echostr;exit;//这里开启时用于验证微信，不用下面的验证了（登录微信公众平台，配置URL，启用时验证）
         //微信配置验证 end
         if(!isset($_GET['msg_signature']))
         {

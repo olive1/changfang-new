@@ -53,8 +53,8 @@ $db['default']['username'] = 'test1';
 $db['default']['password'] = 'test1';
 $db['default']['database'] = 'changfang';
 $db['default']['dbdriver'] = 'mysql';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
+$db['default']['dbprefix'] = 'dili_';
+$db['default']['pconnect'] = FALSE;
 $db['default']['db_debug'] = TRUE;
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = '';
@@ -63,6 +63,12 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
+
+//91kaihui
+$db['default']['hostname'] = 'dg1ujsih0x.gotoftp5.com';
+$db['default']['username'] = 'dg1ujsih0x';
+$db['default']['password'] = 'wg8zajdj';
+$db['default']['database'] = 'dg1ujsih0x';
 
 
 /* End of file database.php */
