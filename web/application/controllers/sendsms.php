@@ -14,6 +14,7 @@ class send_sms extends MY_Controller {
 	 * @param array $data
 	 */
 	public function send(){
+		$this->load->library('sendsms_helper');
         $phone		= this->input->post('phone');   
 		$ip			= $this->input->ip_address();
 		$code		= rand(1000,9999);
@@ -40,21 +41,14 @@ class send_sms extends MY_Controller {
 		//发送手机短信验证码
 		
 		
-
-		//获得短信模板内容
-		$sms_template = $this->sendsms_helper->sms_template;
 		//替换模板
-		$msg=str_replace('{code}',$code, $sms_template);
-		
-		$msg = str_replace('{expiredtime}',$expiredtime,$msg);
-
-		
-		$this->load->library('sendsms_helper');
-		$issend		= $this->sendsms_helper->sendsms($mobile, $msg);
+		$msg		= str_replace('{code}', $code, $this->sendsms_helper->sms_template);		
+		$msg		= str_replace('{expiredtime}', $expiredtime, $msg);
+		$issend		= $this->sendsms_helper->sendsms($phone, $msg);
 
 		if(!$issend) 
 		{
-			log_message('error', "sms_new->send | 手机号:{$mobile} 验证码:{$code} 调用短信发送返回值:" . json_encode($issend));
+			log_message('error', "sms_new->send | 手机号:{$phone} 验证码:{$code} 调用短信发送返回值:" . json_encode($issend));
 			echo '发送失败';exit;
 		}
 		
@@ -69,13 +63,19 @@ class send_sms extends MY_Controller {
 		);
 		
 		//insert
+		$insert = $this->db->insert('lulu_smscode', $sms_data);
 
 		//成功
+		$this->response(array(1, '发送成功'));
 	}
 
 
 
-
+	function response($msg)
+	{
+		echo json_encode($msg);
+		exit;
+	}
 
 
  }

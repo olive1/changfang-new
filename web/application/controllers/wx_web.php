@@ -132,7 +132,7 @@ class Wx_web extends CI_Controller
     }
 
     /**
-     * 3.老用户推广得到的新用户列表
+     * 3.用户列表(老用户对应新用户)
      * 业务员查看自己的老用户推广数
      *
      */
@@ -162,8 +162,9 @@ class Wx_web extends CI_Controller
         //新用户提交手机号时：绑定 邀请者与被邀请者 手机号
         if($this->input->post('phone_new'))
         {
-            $phone      = (int)$this->input->post("phone");
-            $code       = (int)$this->input->post("code");
+            //留言用户信息
+            $phone_new      = (int)$this->input->post("phone_new");
+            $code           = (int)$this->input->post("code");
 
             $user_data_new  = $this->db->get_where('lulu_user_fengxiang', array('phone_new'=>$phone_new))->row_array();
             //验证新用户手机号 是否已存在
@@ -176,7 +177,9 @@ class Wx_web extends CI_Controller
             if(!$phone_old) $phone_old = $phone_new;//未获取到邀请者，则用自己
 
             //短信验证，是否匹配
-            if($code != $_SESSION['code'])
+            $sql		= "SELECT * FROM dili_lulu_smscode WHERE phone='{$phone_new}' and code='{$code}' and created>'{date('Y-m-d 00:00:00')}' and created<'{date('Y-m-d 23:59:59')}' ORDER BY id DESC  ";
+            $row		= $this->db->query($sql)->row_array();
+            if($code != $row['code'])
             {
                 redirect($uri_view.'?error_msg=短信验证码不正确');
                 return;
@@ -207,7 +210,7 @@ class Wx_web extends CI_Controller
     }
 
     /**
-     * m1、老用户进入 手机号验证绑定openid页
+     * m1、老用户进入页面，进行手机号验证绑定openid页
      */
     function bind_phone()
     {
@@ -220,7 +223,7 @@ class Wx_web extends CI_Controller
     }
 
     /**
-     * 表单提交保存，验证
+     * m1 save 表单提交保存，验证
      */
     function bind_phone_save()
     {
@@ -247,7 +250,9 @@ class Wx_web extends CI_Controller
         }
 
         //2.短信验证，是否匹配
-        if($code != $_SESSION['code'])
+        $sql		= "SELECT * FROM dili_lulu_smscode WHERE phone='{$phone}' and code='{$code}' and created>'{date('Y-m-d 00:00:00')}' and created<'{date('Y-m-d 23:59:59')}' ORDER BY id DESC  ";
+        $row		= $this->db->query($sql)->row_array();
+        if($code != $row['code'])
         {
             redirect($uri_view.'?error_msg=短信验证码不正确');
             return;
