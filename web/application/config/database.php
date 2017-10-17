@@ -71,5 +71,26 @@ $db['default']['password'] = 'wg8zajdj';
 $db['default']['database'] = 'dg1ujsih0x';
 
 
+
+//access mdb
+$db['access']['hostname'] = "DRIVER={Microsoft Access Driver (*.mdb)}; DBQ=D:/x/test/mg/changfang/x/web/data/#database#/#database#.mdb";//你自己的数据库路径
+//$db['access']['hostname'] = "pdo:DRIVER={Microsoft Access Driver (*.mdb)}; DBQ=D:/public/Database1.mdb";//这里用odbc而不是pdo_odbc驱动,
+$db['access']['username'] = "";
+$db['access']['password'] = "";
+//$db['access']['database'] = "D:/public/Database1.mdb";//测试有没有都没有影响
+$db['access']['dbdriver'] = "odbc";
+//$db['access']['dbdriver'] = "pdo";//这里用odbc而不是pdo_odbc驱动,
+$db['access']['dbprefix'] = "";
+$db['access']['pconnect'] = TRUE;
+$db['access']['db_debug'] = TRUE;
+$db['access']['cache_on'] = FALSE;
+$db['access']['cachedir'] = "";
+$db['access']['char_set'] = "utf8";
+$db['access']['dbcollat'] = "utf8_general_ci";
+$db['access']['swap_pre'] = '';
+$db['access']['autoinit'] = TRUE;
+$db['access']['stricton'] = FALSE;
+
+
 /* End of file database.php */
 /* Location: ./application/config/database.php */

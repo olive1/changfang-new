@@ -29,7 +29,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-sm-8 col-centered">
-          <form method="post" id="register-form" autocomplete="off" action="?" class="nice-validator n-default" novalidate>
+          <form method="post" id="register-form" autocomplete="off" action="wx_web/bind_phone_save" class="nice-validator n-default" novalidate>
             <div class="form-group">
               <input type="text" class="form-control" id="phone" name="phone" placeholder="输入手机号" autocomplete="off" aria-required="true" data-tip="">
             </div>

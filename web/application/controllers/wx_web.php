@@ -104,6 +104,7 @@ class Wx_web extends CI_Controller
     }
 
     /**
+     * 判断 下个页面网址是什么（1、老用户手机验证，2、得到老用户的分享推广页面）
      * 跳转页面：活动页或输入手机号界面做绑定
      */
     function redirect_next_url()
@@ -115,7 +116,7 @@ class Wx_web extends CI_Controller
         $openid     = $_SESSION['access_token_data']['openid'];
         $user_data  = $this->db->get_where('lulu_user', array('wx_openid'=>$openid))->row_array();
 
-        //已绑定过OPENID，则直接跳转活动页
+        //已绑定过OPENID，则直接跳转2、活动推广页
         if($user_data && isset($user_data['phone']))
         {
             $_SESSION['user_data'] = $user_data;
@@ -123,7 +124,7 @@ class Wx_web extends CI_Controller
             redirect($uri_view);
         }else
         {
-            $uri_view   = 'wx_web/bind_phone';//默认 手机号绑定页
+            $uri_view   = 'wx_web/bind_phone';//默认 1、老用户手机号验证绑定页
             redirect($uri_view);
         }
 
@@ -131,12 +132,26 @@ class Wx_web extends CI_Controller
     }
 
     /**
-     * 活动展示页
-     * 输入手机号，与分享者手机号进行关联
+     * 3.老用户推广得到的新用户列表
+     * 业务员查看自己的老用户推广数
+     *
+     */
+    function user_friend()
+    {
+
+    }
+
+    /**
+     * m2、活动推广页
+     * （1）输入手机号并短信验证身份，选择基地
+     * （2）与老客户手机号进行关联
+     * （3）发消息给业务员、老客户
+     *
      * 安全验证：短信和验证码
      */
     function huodon()
     {
+        $uri_view   = 'wx_web/huodon';
         //$user_data = $_SESSION = array();
 
         $phone_old      = $this->input->post('phone_old');
@@ -144,16 +159,28 @@ class Wx_web extends CI_Controller
         //print_r($_SESSION);exit;
 
 
-        //绑定 邀请者与被邀请者 手机号
+        //新用户提交手机号时：绑定 邀请者与被邀请者 手机号
         if($this->input->post('phone_new'))
         {
-            $phone_new      = $this->input->post('phone_new');
-            if(!$phone_new)
+            $phone      = (int)$this->input->post("phone");
+            $code       = (int)$this->input->post("code");
+
+            $user_data_new  = $this->db->get_where('lulu_user_fengxiang', array('phone_new'=>$phone_new))->row_array();
+            //验证新用户手机号 是否已存在
+            if($user_data_new)//手机号已存在，则更新openid
             {
-                echo '请填写手机号';
-                exit;
+                redirect($uri_view.'?error_msg=手机号已提交过');
+                return;
             }
+
             if(!$phone_old) $phone_old = $phone_new;//未获取到邀请者，则用自己
+
+            //短信验证，是否匹配
+            if($code != $_SESSION['code'])
+            {
+                redirect($uri_view.'?error_msg=短信验证码不正确');
+                return;
+            }
 
             $insert = '';//保存数据表 lulu_user_fengxiang
             $user_fengxiang_data  = array(
@@ -179,50 +206,84 @@ class Wx_web extends CI_Controller
         $this->load->view("wx/huodon", $data);
     }
 
-
-
     /**
-     * 老用户进入 手机号绑定openid页
+     * m1、老用户进入 手机号验证绑定openid页
      */
     function bind_phone()
     {
         $openid     = $_SESSION['access_token_data']['openid'];
         if(!$openid) show_error('获取微信openid失败，请重新进入首页获取！');
-        $phone      = $this->input->post("phone");
-        //绑定手机号
-        if($phone && $openid)
-        {
-            $user_data  = $this->db->get_where('lulu_user', array('phone'=>$phone))->row_array();
-            //update
-            if($user_data)
-            {
-                $this->db->where('phone', $phone)->update('lulu_user', array('wx_openid'=>$openid));
-            }else//insert
-            {
-                $user_data  = array(
-                    'phone'                 => $phone,
-                    'wx_openid'             => $openid,
-                    'wx_access_token'       => '',
-                    'wx_expires_in'         => '',
-                    'wx_refresh_token'      => '',
-                    'scope'                 => '',
-                    'created'               => date("Y-m-d H:i:s"),
-                );
-                $this->db->insert('lulu_user', $user_data);
-            }
-            //echo $this->db->last_query();exit;
-            //进入活动页
-            $_SESSION['user_data'] = $user_data;
-            $uri_view  = 'wx_web/huodon?phone_old='.$user_data['phone'];//
-            redirect($uri_view);
-        }
-
-
         $data = array(
             'openid' => $openid,
         );
         $this->load->view("wx/bind_phone", $data);
     }
+
+    /**
+     * 表单提交保存，验证
+     */
+    function bind_phone_save()
+    {
+        $openid     = $_SESSION['access_token_data']['openid'];
+        if(!$openid) show_error('获取微信openid失败，请重新进入首页获取！');
+        $phone      = (int)$this->input->post("phone");
+        $code       = (int)$this->input->post("code");
+
+        $uri_view  = 'wx_web/bind_phone';//
+        if(!$phone)
+        {
+            redirect($uri_view.'?error_msg=请填写手机号');
+        }
+
+        //点击‘生成我的推广页’按钮时，绑定手机号
+        //1.判断是否老用户
+        $this->load->model('Access_model');
+        $user_old         = $this->Access_model->news_table_row(array('phone'=>$phone));
+
+        if(!$user_old)
+        {
+            redirect($uri_view.'?error_msg=该手机号不是老用户，您可以点击新用户链接给我们');
+            return;
+        }
+
+        //2.短信验证，是否匹配
+        if($code != $_SESSION['code'])
+        {
+            redirect($uri_view.'?error_msg=短信验证码不正确');
+            return;
+        }
+
+
+        //保存至数据库，并绑定微信
+        $user_data  = $this->db->get_where('lulu_user', array('phone'=>$phone))->row_array();
+        //update
+        if($user_data)//手机号已存在，则更新openid
+        {
+            $this->db->where('phone', $phone)->update('lulu_user', array('wx_openid'=>$openid));
+        }else//insert
+        {
+            $user_data  = array(
+                'phone'                 => $phone,
+                'wx_openid'             => $openid,
+                'wx_access_token'       => '',
+                'wx_expires_in'         => '',
+                'wx_refresh_token'      => '',
+                'scope'                 => '',
+                'created'               => date("Y-m-d H:i:s"),
+            );
+            $this->db->insert('lulu_user', $user_data);
+        }
+
+        //echo $this->db->last_query();exit;
+
+        //3.跳转到‘我的推广页’
+        $_SESSION['user_data'] = $user_data;
+        $uri_view  = 'wx_web/huodon?phone_old='.$user_data['phone'];//
+        redirect($uri_view);
+
+    }
+
+
 
     /**
      * 3 第三步：刷新access_token（如果需要）
@@ -271,6 +332,22 @@ class Wx_web extends CI_Controller
     {
         show_error('微信回调页面');
     }
+
+
+    function test()
+    {
+        $phone = '13818786656';
+        $this->load->model('Access_model');
+        $user_old         = $this->Access_model->news_table_row(array('a2'=>$phone));
+
+        if(!$user_old)
+        {
+            echo '该手机号不是老用户，您可以点击新用户链接给我们';
+        }
+        print_r($user_old);
+    }
+
+
 
 
 }
