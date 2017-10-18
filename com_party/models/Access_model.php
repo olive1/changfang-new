@@ -15,7 +15,8 @@ class Access_model extends CI_Model{
 
     public function news_table_result($where=array())
     {
-        $result = $this->access_db->select('*')->get('news')->result_array();
+
+        $result = $this->access_db->select('newsid,a1,a2,a3,adminid,news_status_id')->get('news')->result_array();
         return $result;
     }
 
@@ -24,7 +25,6 @@ class Access_model extends CI_Model{
         $row = $this->access_db->select('*')->where($where)->get('news')->row_array();
         return $row;
     }
-
 
 
 

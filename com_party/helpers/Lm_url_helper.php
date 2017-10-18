@@ -82,5 +82,34 @@ if ( ! function_exists('build_url'))
 }
 
 
+    /*
+     * 字段作为key
+     * $results 记录数组
+     * $field 字段名
+     */
+if ( ! function_exists('field2key'))
+{
+    function field2key($results, $field1 = 'id', $field2 = '')
+    {
+        
+        $data   = array();
+        if(!is_array($results)) return $data;
+        
+        foreach($results as $k=>$v){
+            if(!isset($v[$field1])) continue;
+            if($field2){
+                if(!isset($v[$field2])) continue;
+                $data[$v[$field1]][$v[$field2]]   = $v;
+            }else{                
+                $data[$v[$field1]]   = $v;                
+            }
+            
+        }
+        
+        return $data;
+    }
+}
+
+
 /* End of file MY_url_helper.php */
 /* Location: ./application/helpers/MY_url_helper.php */
