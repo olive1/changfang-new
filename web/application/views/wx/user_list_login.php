@@ -31,19 +31,16 @@
         <div class="col-md-3 col-sm-8 col-centered">
           
             <div class="form-group">
-              <input type="text" class="form-control" id="phone" name="phone" placeholder="输入手机号" autocomplete="off" aria-required="true" data-tip="">
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="手机号" autocomplete="off" aria-required="true" data-tip="">
             </div>
             
 
  
   
   
-  <div class="row">
-  <div class="col-xs-4">
-    <input type="text" id="code" name="code" class="form-control" placeholder="">
-  </div>
-<button class="btn btn-default" id="getcode">获取验证码</button>
-</div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="adminpass" name="adminpass" placeholder="密码" autocomplete="off" aria-required="true" data-tip="">
+            </div>
 
         
             
@@ -62,12 +59,9 @@
 
 </div>
             <div class="form-center-button">
-              <button id="submit_button" class="btn btn-primary btn-current">生成我的推广页</button>
+              <button id="submit_button" class="btn btn-primary btn-current">登录</button>
     			</div>
-                
-  <div class="form-group" style="text-align:center; margin-top:20px;">
-   <a href="<?php echo site_url();?>wx_web/huodon?phone_old=13817999192">我是新用户，直接咨询</a>
-  </div>
+
                 
           
         </div>
@@ -91,40 +85,11 @@
 <script>
     $(document).ready(function () {
 		
-		
-		$('img#captcha').click(function(){
-            $(this).attr('src', '/login/captcha/' + Math.random());
-        });
-		
-		
-		//获取验证码
-		$("#getcode").click(function(){
-			var url_save = '<?php echo site_url();?>sendsms/send';
-			var phone = $("#phone").val();
-			if(!phone) 
-			{
-				alert('请输入手机号');
-				return;
-			}
-			
-				$.post(url_save, { type: "bind_phone", phone:phone },
-			   function(data){
-				   var dara_json = eval("(" + data + ")"); 
-				   //console.log(dara_json);
-				   alert(dara_json[1]);
-				 
-			   });
-			   
-			   
-			   
-		});
-		
-		
-		//提交绑定
+		//提交登录
 		$("#submit_button").click(function(){
-			var url_save = '<?php echo site_url();?>wx_web/bind_phone_save';
-			var phone = $("#phone").val();
-			var code = $("#code").val();
+			var url_save 	= '<?php echo site_url();?>wx_web/login_save';
+			var phone 		= $("#phone").val();
+			var adminpass 	= $("#adminpass").val();	
 			
 			if(!phone) 
 			{
@@ -132,20 +97,19 @@
 				return;
 			}
 			
-			if(!code) 
+			if(!adminpass) 
 			{
-				alert('请输入验证码');
+				alert('请输入密码');
 				return;
 			}
 			
-				$.post(url_save, { phone: phone, code: code },
+				$.post(url_save, { phone: phone, adminpass:adminpass },
 			   function(data){
 				   var dara_json = eval("(" + data + ")"); 
-				   if(dara_json[0] == 0 )
-				   {
 						alert(dara_json[1]);
-					}else{
-						window.location.href=dara_json[2];
+				   if(dara_json[0] == 1 )
+				   {
+						window.location.href=dara_json[2];//跳转到对应基地页面
 					}
 					
 			   });
@@ -154,22 +118,6 @@
 			   
 		});
 		
-		
-		
-		
-		
-		
-        var intro = $('.intro');
-        $('#particles').particleground({
-            dotColor: 'rgba(52, 152, 219, 0.36)',
-            lineColor: 'rgba(52, 152, 219, 0.86)',
-            density: 130000,
-            proximity: 500,
-            lineWidth: 0.2
-        });
-        intro.css({
-            'margin-top': -(intro.height() / 2 + 100)
-        });
     });
 </script>
 <div style="text-align:center;">

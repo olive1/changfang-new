@@ -28,6 +28,26 @@ class Wx_web_list extends CI_Controller
     {
         parent::__construct();
         session_start();
+        $this->is_login();
+    }
+
+    function is_login()
+    {
+        if(!isset($_SESSION['adminid']))
+        {
+            redirect('/wx_web/user_list_login/');
+            return;
+        }
+    }
+
+    function user_exit()
+    {
+        if(isset($_SESSION['adminid']))
+        {
+            unset($_SESSION['adminid']);
+            redirect('/wx_web/user_list_login/');
+            return;
+        }
     }
 
     /**
@@ -38,7 +58,7 @@ class Wx_web_list extends CI_Controller
     function user_friend()
     {
         $openid     = '';
-        $adminid    = 18;
+        $adminid    = 15;
 
         //所有老用户(包括新用户)access
         $this->load->model('Access_model');
@@ -47,7 +67,7 @@ class Wx_web_list extends CI_Controller
         //print_r($user_old);
 
         //mysql已收集的老用户和新用户 lulu_user_fengxiang
-        $user_new  = $this->db->get('lulu_user_fengxiang')->row_array();
+        $user_new  = $this->db->get('lulu_user_fengxiang')->result_array();
 
         //mysql [老用户][新用户]
         $user_new_oldkey    = field2key($user_new,'phone_old');
@@ -55,258 +75,72 @@ class Wx_web_list extends CI_Controller
         //mysql [新用户][老用户]
         $user_new_newkey    = field2key($user_new,'phone_new');
 
+        //print_r($user_new_oldkey);exit;
         //已录入订单，并且财务审核成功的新用户:mysql新用户 如果在 access所有用户中，并且财务成功，标注新用户为成功新用户
         $user_new_newkey_success    = array();
         //合并后的 老用户和新用户
         $user_old_new_hebin         = array();
         foreach($user_old as $k=>$row_old)
         {
-            $row_old['phone_new']  = array();//嵌入新用户手机号字段
+            $row_old['phone_new']   = '';//嵌入新用户手机号字段
+            $row_old['created']     = '';
             //防止中文乱码
             $row_old['a1'] =@iconv('gbk','utf-8',$row_old['a1']);
             $user_old[$k] =$row_old;
 
             //已录入订单，并且财务审核成功的用户
-            if(in_array($user_new_newkey, $row_old['a1']) && $row_old['news_status_id'] == 3)
+            if(array_key_exists($row_old['a2'], $user_new_newkey) && $row_old['news_status_id'] == 3)
             {
                 //键名为新用户手机号，值也是 新用户手机号
-                $user_new_newkey_success[$row_old['a1']] = $row_old['a1'];
+                $user_new_newkey_success[$row_old['a2']] = array(
+                    'a2'=>$row_old['a2'],
+                    'a3'=>$row_old['a3'],
+                );
             }
 
             //嵌入新用户手机号字段
-            if(isset($user_new_oldkey[$row_old['a1']]))
+            if(isset($user_new_oldkey[$row_old['a2']]))
             {
-                $row_old['phone_new']      = $user_new_oldkey[$row_old['a1']]['phone_new'];
+                $row_old['phone_new']       = $user_new_oldkey[$row_old['a2']]['phone_new'];
+                $row_old['created']         = $user_new_oldkey[$row_old['a2']]['created'];
             }
             $user_old_new_hebin[$k]     = $row_old;
         }
 
+        //print_r($user_new_newkey_success);exit;
         //所有老用户列表，标注成功新用户
+        $user_list  = array();
         foreach($user_old_new_hebin as $k=>$v)
         {
             //新用户订单状态
-            $v['is_success'] = 0;
-            if(in_array($v['phone_new'], $user_new_newkey_success[$v['phone_new']]))
+            $v['luru_time']     = '';
+            $v['is_success']    = 0;
+            if(!$v['phone_new']) continue;
+            if(array_key_exists($v['phone_new'], $user_new_newkey_success))
             {
                 $v['is_success'] = 1;
+                $v['luru_time'] = $user_new_newkey_success[$v['phone_new']]['a3'];//access中的 新增用户 录入时间
             }
-            $user_old_new_hebin[$k] = $v;
+            $user_list[$k] = $v;
         }
 
-        print_r($user_old_new_hebin);
-    }
+        sortArrByOneField($user_list, 'is_success');
 
-    /**
-     * m2、活动推广页
-     * （1）输入手机号并短信验证身份，选择基地
-     * （2）与老客户手机号进行关联
-     * （3）发消息给业务员、老客户
-     *
-     * 安全验证：短信和验证码
-     */
-    function huodon()
-    {
-        $uri_view   = 'wx_web/huodon';
-        //$user_data = $_SESSION = array();
-
-        $phone_old      = $this->input->post('phone_old');
-        $user_data      = isset($_SESSION['user_data']) ?  $_SESSION['user_data'] : array();
-        //print_r($_SESSION);exit;
-
-
-        //新用户提交手机号时：绑定 邀请者与被邀请者 手机号
-        if($this->input->post('phone_new'))
-        {
-            //留言用户信息
-            $phone_new      = (int)$this->input->post("phone_new");
-            $code           = (int)$this->input->post("code");
-
-            $user_data_new  = $this->db->get_where('lulu_user_fengxiang', array('phone_new'=>$phone_new))->row_array();
-            //验证新用户手机号 是否已存在
-            if($user_data_new)//手机号已存在，则更新openid
-            {
-                redirect($uri_view.'?error_msg=手机号已提交过');
-                return;
-            }
-
-            if(!$phone_old) $phone_old = $phone_new;//未获取到邀请者，则用自己
-
-            //短信验证，是否匹配
-            $sql		= "SELECT * FROM dili_lulu_smscode WHERE phone='{$phone_new}' and code='{$code}' and created>'{date('Y-m-d 00:00:00')}' and created<'{date('Y-m-d 23:59:59')}' ORDER BY id DESC  ";
-            $row		= $this->db->query($sql)->row_array();
-            if($code != $row['code'])
-            {
-                redirect($uri_view.'?error_msg=短信验证码不正确');
-                return;
-            }
-
-            $insert = '';//保存数据表 lulu_user_fengxiang
-            $user_fengxiang_data  = array(
-                'phone_old'            => $phone_old,
-                'phone_new'            => $phone_new,
-                'created'               => date("Y-m-d H:i:s"),
-            );
-            $is_insert = $this->db->insert('lulu_user_fengxiang', $user_fengxiang_data);
-            $message    = "保存失败";
-            if($is_insert)
-            {
-                $message = "<div style='font-size:50px;'>提交成功，您的邀请人{$phone_old} 将获得额外奖励</div>";
-            }
-            //show_error($message);
-
-            echo $message;exit;
-        }
-
-        $data       = array(
-            'phone_old' => $phone_old,
-            'user_data' => $user_data
-        );
-        $this->load->view("wx/huodon", $data);
-    }
-
-    /**
-     * m1、老用户进入页面，进行手机号验证绑定openid页
-     */
-    function bind_phone()
-    {
-        $openid     = $_SESSION['access_token_data']['openid'];
-        if(!$openid) show_error('获取微信openid失败，请重新进入首页获取！');
+        //print_r($user_old_new_hebin);exit;
         $data = array(
-            'openid' => $openid,
+            'user_list' => $user_list,
         );
-        $this->load->view("wx/bind_phone", $data);
+        $this->load->view("wx/user_list",$data);
     }
-
-    /**
-     * m1 save 表单提交保存，验证
-     */
-    function bind_phone_save()
-    {
-        $openid     = $_SESSION['access_token_data']['openid'];
-        if(!$openid) show_error('获取微信openid失败，请重新进入首页获取！');
-        $phone      = (int)$this->input->post("phone");
-        $code       = (int)$this->input->post("code");
-
-        $uri_view  = 'wx_web/bind_phone';//
-        if(!$phone)
-        {
-            redirect($uri_view.'?error_msg=请填写手机号');
-        }
-
-        //点击‘生成我的推广页’按钮时，绑定手机号
-        //1.判断是否老用户
-        $this->load->model('Access_model');
-        $user_old         = $this->Access_model->news_table_row(array('phone'=>$phone));
-
-        if(!$user_old)
-        {
-            redirect($uri_view.'?error_msg=该手机号不是老用户，您可以点击新用户链接给我们');
-            return;
-        }
-
-        //2.短信验证，是否匹配
-        $sql		= "SELECT * FROM dili_lulu_smscode WHERE phone='{$phone}' and code='{$code}' and created>'{date('Y-m-d 00:00:00')}' and created<'{date('Y-m-d 23:59:59')}' ORDER BY id DESC  ";
-        $row		= $this->db->query($sql)->row_array();
-        if($code != $row['code'])
-        {
-            redirect($uri_view.'?error_msg=短信验证码不正确');
-            return;
-        }
-
-
-        //保存至数据库，并绑定微信
-        $user_data  = $this->db->get_where('lulu_user', array('phone'=>$phone))->row_array();
-        //update
-        if($user_data)//手机号已存在，则更新openid
-        {
-            $this->db->where('phone', $phone)->update('lulu_user', array('wx_openid'=>$openid));
-        }else//insert
-        {
-            $user_data  = array(
-                'phone'                 => $phone,
-                'wx_openid'             => $openid,
-                'wx_access_token'       => '',
-                'wx_expires_in'         => '',
-                'wx_refresh_token'      => '',
-                'scope'                 => '',
-                'created'               => date("Y-m-d H:i:s"),
-            );
-            $this->db->insert('lulu_user', $user_data);
-        }
-
-        //echo $this->db->last_query();exit;
-
-        //3.跳转到‘我的推广页’
-        $_SESSION['user_data'] = $user_data;
-        $uri_view  = 'wx_web/huodon?phone_old='.$user_data['phone'];//
-        redirect($uri_view);
-
-    }
-
 
 
     /**
-     * 3 第三步：刷新access_token（如果需要）
-     * @return string
+     * 批量发短信
      */
-    function three($refresh_token)
+    function send_user()
     {
-        $code           = $this->input->get_post("code");
-        $state          = $this->input->get_post("state");
-        $url            = "https://api.weixin.qq.com/sns/oauth2/refresh_token?appid=APPID&grant_type=refresh_token&refresh_token={$refresh_token}";
 
-        $this->load->library("crypter/Httprequest");
-        $returnData         = $this->httprequest->doget($url);
-        if($returnData[0] != '200')
-        {
-            log_message('error', __FUNCTION__.':httprequest doget 请求失败:'.json_encode($returnData));
-            return false;
-        }
-
-        $access_token_data  =@json_decode($returnData[1]);
-        if(!$access_token_data || !isset($access_token_data['access_token']) || !isset($access_token_data['openid']))
-        {
-            log_message('error', __FUNCTION__.':微信返回access_token失败:'.$returnData[1]);
-            return false;
-        }
-
-        //保存openid
-        $this->set_access_token_data($access_token_data);
-        return true;
     }
-
-    /**
-     * 记录登录状态
-     * @param $access_token_data
-     */
-    function insert($access_token_data)
-    {
-        print_r($access_token_data);
-        exit;
-    }
-
-    /**
-     * 微信回调页面
-     */
-    function huidiao()
-    {
-        show_error('微信回调页面');
-    }
-
-
-    function test()
-    {
-        $phone = '13818786656';
-        $this->load->model('Access_model');
-        $user_old         = $this->Access_model->news_table_row(array('a2'=>$phone));
-
-        if(!$user_old)
-        {
-            echo '该手机号不是老用户，您可以点击新用户链接给我们';
-        }
-        print_r($user_old);
-    }
-
 
 
 

@@ -113,7 +113,17 @@ class Login extends CI_Controller{
             $this->auth->process_logout();
 			
         }
-    
+
+    public function captcha()
+    {
+        $this->load->library('captcha');
+        $code = $this->captcha->getCaptcha();
+        //$this->session->set_userdata('code', $code);
+        //$this->session->set_tempdata('captcha', $code, 7200);
+        $this->captcha->showImg();
+    }
+
+
 }
 
 

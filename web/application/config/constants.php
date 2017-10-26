@@ -67,8 +67,10 @@ define('LUMN_fabu_x_limit',                          50);  //发布 限制个数
 
 define('WX_TOKEN',		'lumeng');
 define('WX_AESKEY',	'NcVSrbibfa7x9qi9Brwgh80lIZnbiRlYOX4IjimlLVX');
-define('WX_APPID',		'wx15198ac62b728599');
-define('WX_APPSECRET',	'e44f98eb0779cbe48ff57f119bf835a4');
+define('WX_APPID',		'wx8389a59441f565b9');//正式：wx8389a59441f565b9，测试:wx15198ac62b728599
+define('WX_APPSECRET',	'548bd50cbb19987c757d268a10c14d2f');//正式：548bd50cbb19987c757d268a10c14d2f，测试:e44f98eb0779cbe48ff57f119bf835a4
+
+
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

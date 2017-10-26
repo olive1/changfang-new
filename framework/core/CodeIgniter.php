@@ -464,7 +464,7 @@ if ( ! is_php('5.4'))
 			{
 				$e404 = FALSE;
 			}
-		} 
+		}
 
 		// Did we reset the $e404 flag? If so, set the rsegments, starting from index 1
 		if ( ! $e404)
@@ -478,7 +478,7 @@ if ( ! is_php('5.4'))
 			);
 		}
 		else
-		{ 
+		{
 			show_404($RTR->directory.$class.'/'.$method);
 		}
 	}

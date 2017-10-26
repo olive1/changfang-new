@@ -5,7 +5,7 @@
 <meta name="renderer" content="webkit">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>绑定手机号</title>
+<title>活动页</title>
 <meta name="Keywords" content="www.021news.cn">
 <meta name="Description" content="www.021news.cn">
 
@@ -17,59 +17,69 @@
 <script src="<?php echo base_url();?>/templates/wx/images/bootstrap.min.js"></script>
 <script src="<?php echo base_url();?>/templates/wx/images/jquery.particleground.min.js"></script>
 </head>
-<body>
-<div id="particles">
+
+
+<body style="background-color:#000; color:#fff;">
+<?php
+$display = '';
+$display2 = 'display:none;';
+if(isset($user_data['phone']) && $user_data['phone'] == $this->input->get('phone_old') )
+{
+	$display 	= "display:none;";
+	$display2 	= '';
+}
+
+//print_r($user_data);
+//echo '<Br><br>'.$phone_old.'==';
+?>
+<div id="particles" style="background:url('<?php echo base_url();?>/templates/wx/images/hdbg.jpg') no-repeat center;">
+
+            
+            
   <canvas class="pg-canvas" width="1920" height="911" style="display: block;"></canvas>
+
   <div class="intro" style="margin-top: -256.5px;">
+                      <div style="height:50px; line-height:50px; margin:50px 0 300px 0;font-size:16px; background:#FF0; color:#000; border:2px solid #CCC;<?php echo $display2;?>">
+             	点击右上角分享至朋友圈
+            </div>      
+
     <div class="container">
       <div class="row" style="padding:30px 0;">
-        <div class="col-md-3 col-centered tac"> <img src="http://www.triptt.com/images/top.png" alt="logo"> </div>
+        <div class="col-md-3 col-centered tac">  </div>
       </div>
     </div>
-    <div class="container" style="text-align:left;">
+              	
+            
+
+            
+    <div class="container">
       <div class="row">
         <div class="col-md-3 col-sm-8 col-centered">
+          <form method="post" id="register-form" autocomplete="off" action="?" class="nice-validator n-default" novalidate>
           
-            <div class="form-group">
-              <input type="text" class="form-control" id="phone" name="phone" placeholder="输入手机号" autocomplete="off" aria-required="true" data-tip="">
+			
+            
+            
+            
+<div style="<?php echo $display;?>">
+
+<input type="hidden" name="phone_old" value="<?php echo $this->input->get('phone_old');?>">
+            
+            <div class="form-group" style="margin:300px 0 0 0 ;">
+                <div style="height:50px; line-height:50px; font-size:16px; background:#000; color:#fff; border:2px solid #000;">
+                    点击右上角分享至朋友圈
+                </div>            
+              <input style="height:100px;" type="text" class="form-control" id="phone_new" name="phone_new" placeholder="输入手机号" autocomplete="off" aria-required="true" data-tip="">
             </div>
             
-
- 
-  
-  
-  <div class="row">
-  <div class="col-xs-4">
-    <input type="text" id="code" name="code" class="form-control" placeholder="">
-  </div>
-<button class="btn btn-default" id="getcode">获取验证码</button>
-</div>
-
-        
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-<div style="height:100px;">
-
-</div>
-            <div class="form-center-button">
-              <button id="submit_button" class="btn btn-primary btn-current">生成我的推广页</button>
-    			</div>
+            <div class="form-center-button" style="margin:20px 0 0 0;">
+              <button type="submit" id="submit_button" class="btn btn-primary btn-current" style="height:80px; font-size:16px;">立刻体验</button>
+    		</div>
+</div>          
                 
-  <div class="form-group" style="text-align:center; margin-top:20px;">
-   <a href="<?php echo site_url();?>wx_web/huodon?phone_old=13817999192">我是新用户，直接咨询</a>
-  </div>
                 
-          
+</form>
         </div>
       </div>
     </div>
@@ -90,75 +100,6 @@
 </div>
 <script>
     $(document).ready(function () {
-		
-		
-		$('img#captcha').click(function(){
-            $(this).attr('src', '/login/captcha/' + Math.random());
-        });
-		
-		
-		//获取验证码
-		$("#getcode").click(function(){
-			var url_save = '<?php echo site_url();?>sendsms/send';
-			var phone = $("#phone").val();
-			if(!phone) 
-			{
-				alert('请输入手机号');
-				return;
-			}
-			
-				$.post(url_save, { type: "bind_phone", phone:phone },
-			   function(data){
-				   var dara_json = eval("(" + data + ")"); 
-				   //console.log(dara_json);
-				   alert(dara_json[1]);
-				 
-			   });
-			   
-			   
-			   
-		});
-		
-		
-		//提交绑定
-		$("#submit_button").click(function(){
-			var url_save = '<?php echo site_url();?>wx_web/bind_phone_save';
-			var phone = $("#phone").val();
-			var code = $("#code").val();
-			
-			if(!phone) 
-			{
-				alert('请输入手机号');
-				return;
-			}
-			
-			if(!code) 
-			{
-				alert('请输入验证码');
-				return;
-			}
-			
-				$.post(url_save, { phone: phone, code: code },
-			   function(data){
-				   var dara_json = eval("(" + data + ")"); 
-				   if(dara_json[0] == 0 )
-				   {
-						alert(dara_json[1]);
-					}else{
-						window.location.href=dara_json[2];
-					}
-					
-			   });
-			   
-			   
-			   
-		});
-		
-		
-		
-		
-		
-		
         var intro = $('.intro');
         $('#particles').particleground({
             dotColor: 'rgba(52, 152, 219, 0.36)',
@@ -173,7 +114,6 @@
     });
 </script>
 <div style="text-align:center;">
-
 </div>
 </body>
 </html>

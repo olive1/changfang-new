@@ -21,6 +21,8 @@ $config_prefix = $get_url['0'];
 
 //$config['base_url']	= 'http://'.$config_prefix.'.changfang.com';
 $config['base_url']	= 'http://www.changfang.com';
+//$config['base_url']	= 'http://www.triptt.com/weixin';
+
 $config['base_url_admin'] = $config['base_url'].'admin/';
 /*
 |--------------------------------------------------------------------------

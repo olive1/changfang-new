@@ -9,14 +9,13 @@ class Access_model extends CI_Model{
     {
         //读取access中数据
         $this->access_db = $this->load->database('access', TRUE);
-
     }
-
 
     public function news_table_result($where=array())
     {
-
-        $result = $this->access_db->select('newsid,a1,a2,a3,adminid,news_status_id')->get('news')->result_array();
+        $this->access_db->select('newsid,a1,a2,a3,adminid,news_status_id');
+        if($where)$this->access_db->where($where);
+        $result = $this->access_db->get('news')->result_array();
         return $result;
     }
 
@@ -26,6 +25,11 @@ class Access_model extends CI_Model{
         return $row;
     }
 
-
+    public function get_row($table,$where)
+    {
+        $row = $this->access_db->select('*')->where($where)->get($table)->row_array();
+        //echo $this->access_db->last_query();
+        return $row;
+    }
 
 }

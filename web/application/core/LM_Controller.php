@@ -1,4 +1,4 @@
-﻿<?php if(!defined('BASEPATH')) exit('不允许直接访问!');
+<?php if(!defined('BASEPATH')) exit('不允许直接访问!');
 /**
  * Lumn系统
  * 基于Codeigniter的多用户非开源系统
@@ -8,13 +8,12 @@
 /**
  * Lumn前台 父控制器
  */
- 
  class Lm_Controller extends CI_Controller{
     
     function __construct(){
         
         parent::__construct();
-        
+
         /** 加载地区库 */
         $this->load->library('Area');
         

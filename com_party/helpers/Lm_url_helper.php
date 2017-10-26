@@ -110,6 +110,25 @@ if ( ! function_exists('field2key'))
     }
 }
 
+/**
+ * 多维，二维数组按值排序，常用于 数据库查询后的多条记录集
+ * 数组
+ * 字段名
+ * 排序
+ */
+if ( ! function_exists('sortArrByOneField'))
+{
+	function sortArrByOneField(&$array, $field, $desc = false){
+		$fieldArr = array();
+		foreach ($array as $k => $v) {
+			$fieldArr[$k] = $v[$field];
+		}
+		$sort = $desc == false ? SORT_ASC : SORT_DESC;
+		array_multisort($fieldArr, $sort, $array);
+	}
+}
+
+
 
 /* End of file MY_url_helper.php */
 /* Location: ./application/helpers/MY_url_helper.php */

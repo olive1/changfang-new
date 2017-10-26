@@ -70,11 +70,19 @@ $db['default']['username'] = 'dg1ujsih0x';
 $db['default']['password'] = 'wg8zajdj';
 $db['default']['database'] = 'dg1ujsih0x';
 
+//triptt西数
+$db['default']['hostname'] = 'sql.m217.vhostgo.com';
+$db['default']['username'] = 'triptt';
+$db['default']['password'] = 'fsgrmhqy';
+$db['default']['database'] = 'triptt';
 
 
 //access mdb
 $db['access']['hostname'] = "DRIVER={Microsoft Access Driver (*.mdb)}; DBQ=D:/x/test/mg/changfang/x/web/data/#database#/#database#.mdb";//你自己的数据库路径
 //$db['access']['hostname'] = "pdo:DRIVER={Microsoft Access Driver (*.mdb)}; DBQ=D:/public/Database1.mdb";//这里用odbc而不是pdo_odbc驱动,
+//西数triptt
+//$db['access']['hostname'] = "DRIVER={Microsoft Access Driver (*.mdb)}; DBQ=D:/wwwroot/triptt/wwwroot/weixin/data/#database#/#database#.mdb";
+
 $db['access']['username'] = "";
 $db['access']['password'] = "";
 //$db['access']['database'] = "D:/public/Database1.mdb";//测试有没有都没有影响
