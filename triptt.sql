@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-10-25 17:26:13
+Date: 2017-10-26 14:47:59
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -6999,7 +6999,7 @@ CREATE TABLE `dili_lulu_smscode` (
   `expiredtime` int(11) DEFAULT NULL COMMENT '过期时间',
   PRIMARY KEY (`id`),
   KEY `phone` (`phone`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='短信验证码表';
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='短信验证码表';
 
 -- ----------------------------
 -- Records of dili_lulu_smscode
@@ -7022,6 +7022,8 @@ INSERT INTO `dili_lulu_smscode` VALUES ('35', '13817999196', '2949', '127.0.0.1'
 INSERT INTO `dili_lulu_smscode` VALUES ('36', '13817999192', '7735', '127.0.0.1', null, '2017-10-25 14:42:18', '1508914038');
 INSERT INTO `dili_lulu_smscode` VALUES ('37', '15851106061', '4457', '127.0.0.1', null, '2017-10-25 14:46:46', '1508914306');
 INSERT INTO `dili_lulu_smscode` VALUES ('38', '15851106166', '6326', '127.0.0.1', null, '2017-10-25 14:48:47', '1508914427');
+INSERT INTO `dili_lulu_smscode` VALUES ('39', '123456', '9287', '127.0.0.1', null, '2017-10-26 03:31:41', '1508989001');
+INSERT INTO `dili_lulu_smscode` VALUES ('40', '13601875632', '2193', '127.0.0.1', null, '2017-10-26 03:37:50', '1508989370');
 
 -- ----------------------------
 -- Table structure for `dili_lulu_user`
@@ -7083,7 +7085,7 @@ CREATE TABLE `dili_lulu_wx_log` (
   `post_data` text,
   `created` datetime DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=934 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=937 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of dili_lulu_wx_log
@@ -7759,6 +7761,9 @@ INSERT INTO `dili_lulu_wx_log` VALUES ('930', '1 原POST', '-{\"signature\":\"c0
 INSERT INTO `dili_lulu_wx_log` VALUES ('931', '1 原POST', '-{\"signature\":\"0b0fe89d1ac51aa70c149831feff916848598ff6\",\"timestamp\":\"1508657234\",\"nonce\":\"189095308\",\"openid\":\"oWX6OuCqdpj0FQf-z-r-4M7gu6-M\",\"encrypt_type\":\"aes\",\"msg_signature\":\"30db995450866e69b1ac5f56d95be6f3d11e399b\"}', '2017-10-22 15:27:14');
 INSERT INTO `dili_lulu_wx_log` VALUES ('932', '1 原POST', '-{\"signature\":\"72bb9632010895eb224415250715ac0f7a7370b8\",\"timestamp\":\"1508726769\",\"nonce\":\"557342349\",\"openid\":\"oWX6OuASYlwKJdr-LqqXXbBLTdvs\",\"encrypt_type\":\"aes\",\"msg_signature\":\"4da1d7c4cb74eec9208bb2ae3ce93f673e5cf7ef\"}', '2017-10-23 10:46:09');
 INSERT INTO `dili_lulu_wx_log` VALUES ('933', '1 原POST', '-{\"signature\":\"fabd49337d831e02ddca44ec243d30bf9cdee132\",\"timestamp\":\"1508731270\",\"nonce\":\"1014066589\",\"openid\":\"oWX6OuAsejZtxkeXoqDK2rswSZio\",\"encrypt_type\":\"aes\",\"msg_signature\":\"3f1b6c4a0f42dbdc6b253d93d09b7e8df9c52988\"}', '2017-10-23 12:01:10');
+INSERT INTO `dili_lulu_wx_log` VALUES ('934', '1 原POST', '-{\"signature\":\"55c4ad78765a3bf7e3e6b8db27b76effc3b92098\",\"timestamp\":\"1508945399\",\"nonce\":\"747811562\",\"openid\":\"oWX6OuDTtPwQ_-eYJa6Q26ZRf1NQ\",\"encrypt_type\":\"aes\",\"msg_signature\":\"d805960476b2a7969f7b506c8542c475d8d28a51\"}', '2017-10-25 23:29:59');
+INSERT INTO `dili_lulu_wx_log` VALUES ('935', '1 原POST', '-{\"signature\":\"e0bd4029ccfba08cfe0158b257f3b6f7a31f0abf\",\"timestamp\":\"1508945438\",\"nonce\":\"1650261170\",\"openid\":\"oWX6OuDTtPwQ_-eYJa6Q26ZRf1NQ\",\"encrypt_type\":\"aes\",\"msg_signature\":\"f3a1e32228b14b1d727c1345744e3903f31c6b73\"}', '2017-10-25 23:30:38');
+INSERT INTO `dili_lulu_wx_log` VALUES ('936', '1 原POST', '-{\"signature\":\"31aedf81f7cee76e035935cd754027a0a994c315\",\"timestamp\":\"1508987530\",\"nonce\":\"1067193684\",\"openid\":\"oWX6OuEHm-xC2wM1_qlhhJvS-eg4\",\"encrypt_type\":\"aes\",\"msg_signature\":\"2ea4eb249d01ea2f2f0078847b15750205a85006\"}', '2017-10-26 11:12:09');
 
 -- ----------------------------
 -- Table structure for `dili_menus`
