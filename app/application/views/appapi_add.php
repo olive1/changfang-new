@@ -93,36 +93,52 @@ $(document).ready(function(){
   
   function sendPost(issave=false)
   {  
-		var url = $("#apiurl").val();
-		var postdata = $("#postdata").val();
-		postdata = eval("(" + postdata + ")"); 		
+		var url_sign = "<?php echo site_url('appapi/get_post_json');?>";
+		var url_post = $("#apiurl").val();
 		
-		$.post(url, postdata,
-		function(data){
-		 	//alert("Data Loaded: " + data);
-			
-			if(issave)
-			{
-				savePost(data);
-			}
-		});
+		var postdata = $("#postdata").val();
+		postdata_string = postdata;
+		postdata_obj = eval("(" + postdata + ")"); 
+		
+		
+		//AJAX同步提交（只有这样才能将返回值 全局变量赋值
+		$.ajaxSetup({ 
+			async : false 
+		}); 
+		
+		$.post(url_sign, postdata_obj,
+			function(data){
+				postdata_string = data;
+			});
+		
+		
+		
+		postdata = eval("(" + postdata_string + ")"); 
+		$.post(url_post, postdata,
+			function(returnData){
+				if(issave)
+				{
+					savePost(postdata_string,returnData);
+				}
+			});
   }
     
   
   
-  function savePost( returndata)
+  function savePost(postdata_string, returndata)
   {
-  		var postdata = $("#postdata").val();
 		var postdata_zhushi= $("#postdata_zhushi").val();
-  		var url="<?php echo $url;?>save";
+  		var url="<?php echo site_url('appapi/save');?>";
 		var apiurl = $("#apiurl").val();
 		var apiname = $("#apiname").val();
 		var id = $("#id").val();
-		
-		$.post(url, {apiurl:apiurl,apiname:apiname, postdata:postdata,postdata_zhushi:postdata_zhushi, returndata:returndata,id:id},
-		function(data){
-			alert('保存成功');
-		});
+		$.post(
+			url, 
+			{apiurl:apiurl,apiname:apiname, postdata:postdata_string,postdata_zhushi:postdata_zhushi, returndata:returndata,id:id},
+			function(data){
+				alert('保存成功');
+			});
+		return;
   }
   
   

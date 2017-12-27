@@ -35,7 +35,7 @@ class Captcha
         $this->outputImg();
     }
 
-    function getCaptcha(){
+    function getCaptcha(){ 
         $this->createCode();
         return strtolower($this->code);
     }
@@ -44,6 +44,7 @@ class Captcha
         $this->im = imagecreatetruecolor($this->width, $this->height);
         $bgColor = imagecolorallocate($this->im, 0, 0, 0);
         imagefill($this->im, 0, 0, $bgColor);
+
     }
 
     private function setDisturb(){
@@ -80,6 +81,7 @@ class Captcha
     }
 
     private function outputImg(){
+        //exit('aaa');
         if (imagetypes() & IMG_JPG) {
             header('Content-type:image/jpeg');
             imagejpeg($this->im);

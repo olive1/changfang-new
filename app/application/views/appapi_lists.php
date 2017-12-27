@@ -51,8 +51,8 @@
           <td> <?php echo str_replace($url,"",$row["apiurl"]);?></td>
           <td> 
 		  <?php 
-		  //$postdata = json_decode($row["postdata"], true);
-		  //echo json_encode($postdata, JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT);  
+		  $row["postdata"] = json_decode($row["postdata"], true);
+		  $row["postdata"] = json_encode($row["postdata"], JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT);  
 		  echo nl2br($row["postdata"]);
 		  ?>
 		  </td>

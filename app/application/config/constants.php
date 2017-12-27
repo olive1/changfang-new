@@ -92,3 +92,6 @@ define('LM_ADMINPATH', 	VIEWPATH.'admin/');
 define('LM_ADMIN_ASSETS', 'other/adminassets/niceadmin/'); // lowest automatically-assigned error code
 
 define('LM_UPLOAD_PATH', FCPATH.'other/upload/');
+
+define('LM_APP_SIGN_KEY', '99ll');
+

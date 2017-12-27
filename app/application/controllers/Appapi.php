@@ -38,18 +38,20 @@ class Appapi extends CI_Controller {
      */
     public $postdata = array(
         'version'   => '版本号    : 1.0/2.0/...',
-        'apptype'   => 'APP类型   : IOS/andriod/...',
-        'sign'      => '签名      : md5(参数1+参数2+...+密钥+时间戳) ; ',//sort参数值后 拼接所有参数值+密钥+时间戳
+        'apptype'   => 'APP类型   : ios/andriod',
+        'time'      => '时间戳（11位）',
+        'sign'      => '签名      : md5(sort(参数1的值+参数2的值+参数X的值+时间戳)+密钥值); ',//sort参数值后MD5    
+        'token'     => '登录后的令牌（登录成功后才有）',
     );
     
     
-    public $error_codes = array(
-        '4001' => '未登录或登录超时',
-        '4002' => '签名错误',
-        '4003' => '缺少参数或参数格式不正确',
-        '4004' => '参数验证失败',
-        '5001' => '系统错误',
-    );
+    public $error_codes = array();
+    
+    public function __construct()
+    {
+        parent::__construct();
+        $this->error_codes= get_error_code_msg();  
+    }
     
     function index()
     {
@@ -60,8 +62,9 @@ class Appapi extends CI_Controller {
 	public function add()
 	{
 	   $data['title']          = "添加APP接口";
-	   $data['url']            = $this->url;       
-       $data['postdata']       = json_encode($this->postdata, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
+	   $data['url']            = $this->url;   
+       $time                    = time();    
+       $data['postdata']       = json_encode(array('version'=>'1.0', 'apptype'=>'ios', 'time'=>"$time", 'token'=>'123'));
        
 	   $this->load->view('appapi_add', $data);
 	}
@@ -96,7 +99,16 @@ class Appapi extends CI_Controller {
         echo json_encode($return, true);exit;
     }
 
-    
+    /**
+     * 重新生成 请求数据，主要增加sign签名
+     * 
+     */
+    function get_post_json()
+    {
+        $post = $_POST;
+        $post['sign'] = get_sign($post);
+        echo json_encode($post, true);exit;
+    }
     
     function save()
     {
@@ -111,7 +123,6 @@ class Appapi extends CI_Controller {
         );
         
         $data = $this->input->post($fields);
-        //print_r($data);
         $data['created'] = date("Y-m-d H:i:s");
         
         if($data['id'])
