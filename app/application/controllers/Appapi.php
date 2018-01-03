@@ -10,6 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * sql:
         CREATE TABLE `puchao_appapi` (
           `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '用户PK',
+          `type` varchar(100) DEFAULT NULL COMMENT '类型',
           `apiurl` varchar(200) DEFAULT NULL COMMENT '接口地址',
           `apiname` varchar(200) DEFAULT NULL COMMENT '接口名称',
           `postdata` varchar(500) DEFAULT NULL COMMENT '请求参数',
@@ -18,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           `order` int(10) DEFAULT NULL COMMENT '排序',
           `created` datetime DEFAULT NULL COMMENT '时间',
           PRIMARY KEY (`id`)
-        ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COMMENT='用户信息表';
+        ) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COMMENT='用户信息表';
 
  */
 class Appapi extends CI_Controller {
@@ -39,9 +40,10 @@ class Appapi extends CI_Controller {
     public $postdata = array(
         'version'   => '版本号    : 1.0/2.0/...',
         'apptype'   => 'APP类型   : ios/andriod',
-        'time'      => '时间戳（11位）',
+        'time'      => '时间戳（10位）',
         'sign'      => '签名      : md5(sort(参数1的值+参数2的值+参数X的值+时间戳)+密钥值); ',//sort参数值后MD5    
         'token'     => '登录后的令牌（登录成功后才有）',
+        'uid'       => '登录后的用户ID（登录成功后才有）',
     );
     
     
@@ -55,6 +57,14 @@ class Appapi extends CI_Controller {
     
     function index()
     {
+        $this->load->config('upload');
+        $config = $this->config->item('image_Qniu');
+        $this->load->library("Upload_Qniu", $config);
+        
+        $file_local_name='D:/x/puchao/git/puchao-oa/admin/other/tem1/img/sample-img-2.png';
+        $file_upload_name='apuchao-oa/dmin/other/tem1/img/sample-img-2.png';
+        $this->upload_qniu->do_upload($file_local_name, $file_upload_name);
+        
         exit('v');
     }
     

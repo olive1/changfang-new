@@ -5,9 +5,20 @@
  * 建议验证前先执行Test.php验证PHP环境
  *
  * 2017/11/30
+	控制器调用示例：
+		 //发送验证码
+		$mobile = '13817999192';
+		$TemplateCode='SMS_118140009';
+		$TemplateParam = array('code'=>rand(1000, 9999));
+		//保存到数据表		
+		//发送
+		$this->load->library('sms/sms');
+		$return = $this->sms->sendSms($mobile, $TemplateCode, $TemplateParam);
+		print_r($return);		
+		//发送后做的事情
  */
 
-namespace Aliyun\DySDKLite\Sms;
+//namespace Aliyun\DySDKLite\Sms;
 
 require_once "SignatureHelper.php";
 
@@ -15,15 +26,15 @@ use Aliyun\DySDKLite\SignatureHelper;
 
 class Sms{
 
-	public	$accessKeyId = "LTAIdmqITrEo0w8s";
-	public	$accessKeySecret = "afteQxoyi5uPzc88q5XNCrdWWHJ3hT";
+	public	$accessKeyId = LM_SMS_KEY;
+	public	$accessKeySecret = LM_SMS_SECRET;
 
 	
 	
 	/**
 	 * 发送短信
 	 */
-	function sendSms($mobile, $TemplateCode, $TemplateParam) {
+	function sendSms($mobile, $TemplateCode='SMS_118140009', $TemplateParam) {
 		
 		$params = array ();
 
@@ -36,7 +47,7 @@ class Sms{
 		$params["PhoneNumbers"] = $mobile;
 
 		// fixme 必填: 短信签名，应严格按"签名名称"填写，请参考: https://dysms.console.aliyun.com/dysms.htm#/develop/sign
-		$params["SignName"] = "短信签名";
+		$params["SignName"] = "阿里云短信测试专用";
 
 		// fixme 必填: 短信模板Code，应严格按"模板CODE"填写, 请参考: https://dysms.console.aliyun.com/dysms.htm#/develop/template
 		$params["TemplateCode"] = $TemplateCode;

@@ -95,3 +95,12 @@ define('LM_UPLOAD_PATH', FCPATH.'other/upload/');
 
 define('LM_APP_SIGN_KEY', '99ll');
 
+define('LM_APP_LOGIN_TIME', 3000000);//30天未登录
+define('LM_APP_LOGIN_MAX', 20);//同IP登录失败次数限制
+
+define('LM_SMS_KEY', 'LTAIdmqITrEo0w8s');
+define('LM_SMS_SECRET', 'afteQxoyi5uPzc88q5XNCrdWWHJ3hT');
+define('LM_SMS_MAX_IP_SEND', 20);//
+define('LM_SMS_MAX_MOBILE_SEND', 20);//
+define('LM_SMS_MAX_TIME', 300);//300秒，即5分钟内有效
+
