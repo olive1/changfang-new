@@ -92,15 +92,28 @@ define('LM_ADMINPATH', 	VIEWPATH.'admin/');
 define('LM_ADMIN_ASSETS', 'other/adminassets/niceadmin/'); // lowest automatically-assigned error code
 
 define('LM_UPLOAD_PATH', FCPATH.'other/upload/');
+define('LM_UPLOAD_PDF_PATH_APP', FCPATH.'third_party/uploads/pdf/');
 
-define('LM_APP_SIGN_KEY', '99ll');
+define('LM_APP_SIGN_KEY', 'aQxoyi5uPz');
 
 define('LM_APP_LOGIN_TIME', 3000000);//30天未登录
 define('LM_APP_LOGIN_MAX', 20);//同IP登录失败次数限制
 
-define('LM_SMS_KEY', 'LTAIdmqITrEo0w8s');
-define('LM_SMS_SECRET', 'afteQxoyi5uPzc88q5XNCrdWWHJ3hT');
+
 define('LM_SMS_MAX_IP_SEND', 20);//
 define('LM_SMS_MAX_MOBILE_SEND', 20);//
 define('LM_SMS_MAX_TIME', 300);//300秒，即5分钟内有效
+
+define('LM_UPLOAD_URL', 'http://test.com/third_party/uploads/');
+
+
+
+//第3方KEY
+define('LM_TUISONG_KEY', 'LM_TUISONG_KEY');
+define('LM_TUISONG_SECRET', 'LM_TUISONG_SECRET');
+
+define('LM_SMS_KEY', 'smskey');
+define('LM_SMS_SECRET', 'LM_SMS_SECRET');
+
+
 

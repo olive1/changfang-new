@@ -1,0 +1,1902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eac90ae1-b072-4fb2-b1ae-6c06c42314e5" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/helpers/Lm_url_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/helpers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/helpers/lmfun_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Base_interf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Captcha.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/ChuanglanSmsApi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Common.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Han2pin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Han2pin2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Identity_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Jg_JPush.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/LM_session.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Ldap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/MY_URI.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Overtrue/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Overtrue/Pinyin/DictLoaderInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Overtrue/Pinyin/FileDictLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Overtrue/Pinyin/GeneratorFileDictLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Overtrue/Pinyin/MemoryFileDictLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Overtrue/Pinyin/Pinyin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Overtrue/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Overtrue/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Overtrue/data/surnames" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Overtrue/data/words_0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Overtrue/data/words_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Overtrue/data/words_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Overtrue/data/words_3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Overtrue/data/words_4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Overtrue/data/words_5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/.scrutinizer.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/autoload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/cdn_get_bandwidth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/cdn_get_flux.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/cdn_get_log_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/cdn_refresh_urls_dirs.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/cdn_timestamp_antileech.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/image_url_builder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/persistent_fop_init.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/persistent_fop_status.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/pfop_mkzip.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/pfop_vframe.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/pfop_video_avthumb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/pfop_watermark.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/php-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/prefop.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/qetag.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_batch_change_mime.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_batch_change_type.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_batch_copy.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_batch_delete.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_batch_delete_after_days.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_batch_move.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_batch_stat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_bucket_domains.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_buckets.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_change_mime.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_change_type.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_copy.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_delete.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_delete_after_days.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_download_urls.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_fetch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_move.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_prefetch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rs_stat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rsf_list_bucket.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/rsf_list_files.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/saveas.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/upload_and_callback.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/upload_and_pfop.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/upload_mgr_init.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/upload_multi_demos.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/upload_simple_file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/upload_tokens.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/examples/upload_verify_callback.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/phpunit.xml.dist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/Auth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/Cdn/CdnManager.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/Config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/Etag.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/Http/Client.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/Http/Error.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/Http/Request.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/Http/Response.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/Processing/ImageUrlBuilder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/Processing/Operation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/Processing/PersistentFop.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/Storage/BucketManager.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/Storage/FormUploader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/Storage/ResumeUploader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/Storage/UploadManager.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/Zone.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/src/Qiniu/functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/test-env.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/tests/Qiniu/Tests/AuthTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/tests/Qiniu/Tests/Base64Test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/tests/Qiniu/Tests/BucketTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/tests/Qiniu/Tests/CdnManagerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/tests/Qiniu/Tests/Crc32Test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/tests/Qiniu/Tests/DownloadTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/tests/Qiniu/Tests/EtagTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/tests/Qiniu/Tests/FopTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/tests/Qiniu/Tests/FormUpTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/tests/Qiniu/Tests/HttpTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/tests/Qiniu/Tests/ImageUrlBuilderTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/tests/Qiniu/Tests/PfopTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/tests/Qiniu/Tests/ResumeUpTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/tests/Qiniu/Tests/ZoneTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Qniu/tests/bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Sendsms_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Service_ldap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Upload_Qniu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/Upload_lm.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/User.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/allpublic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/area.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/auth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/crypter/Aes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/crypter/Httprequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/crypter/Sign.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/jiGuang/JPush/JPush.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/jiGuang/JPush/core/DevicePayload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/jiGuang/JPush/core/JPushException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/jiGuang/JPush/core/PushPayload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/jiGuang/JPush/core/ReportPayload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/jiGuang/JPush/core/SchedulePayload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/jietu_win/GdiPlus.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/jietu_win/IECapt.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/jietu_win/image.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/jietu_win/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/jietu_win/screens/56ff7cc793119b340d65f92012ae6c60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/jietu_win/screens/747e2ec37a39151949ced549448348a0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/lm_upload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/lmauth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/Phpmailer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/class.pop3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/class.smtp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/docs/Callback_function_notes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/docs/DomainKeys_notes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/docs/Note_for_SMTP_debugging.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/docs/extending.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/docs/faq.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/docs/pop3_article.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/docs/use_gmail.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/contents.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/images/phpmailer.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/images/phpmailer_mini.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/test_db_smtp_basic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/test_mail_advanced.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/test_mail_basic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/test_pop_before_smtp_advanced.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/test_pop_before_smtp_basic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/test_sendmail_advanced.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/test_sendmail_basic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/test_smtp_advanced.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/test_smtp_advanced_no_auth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/test_smtp_basic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/test_smtp_basic_no_auth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/test_smtp_gmail_advanced.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/examples/test_smtp_gmail_basic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-ar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-br.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-ca.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-ch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-cz.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-de.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-dk.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-es.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-et.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-fi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-fo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-fr.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-hu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-it.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-ja.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-nl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-no.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-pl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-ro.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-ru.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-se.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-tr.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-zh.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/language/phpmailer.lang-zh_cn.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/test/contents.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/test/phpmailerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/test/test.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/test/test_callback.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/phpmailer/test/testemail.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/recur.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/sms/SignatureHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/sms/Sms.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/sms/Test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/sms/demo/querySendDetails.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/CHANGELOG.TXT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/LICENSE.TXT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/Tcpdf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/config/tcpdf_config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/example_1d_html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/example_1d_png.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/example_1d_svg.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/example_1d_svgi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/example_2d_datamatrix_html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/example_2d_datamatrix_png.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/example_2d_datamatrix_svg.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/example_2d_datamatrix_svgi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/example_2d_pdf417_html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/example_2d_pdf417_png.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/example_2d_pdf417_svg.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/example_2d_pdf417_svgi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/example_2d_qrcode_html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/example_2d_qrcode_png.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/example_2d_qrcode_svg.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/example_2d_qrcode_svgi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/tcpdf_barcodes_1d_include.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/barcodes/tcpdf_barcodes_2d_include.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/config/tcpdf_config_alt.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/data/cert/tcpdf.crt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/data/cert/tcpdf.fdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/data/cert/tcpdf.p12" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/data/chapter_demo_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/data/chapter_demo_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/data/table_data_demo.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/data/utf8test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_001.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_002.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_003.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_004.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_005.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_006.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_007.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_008.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_009.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_010.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_011.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_012.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_013.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_014.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_015.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_016.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_017.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_018.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_019.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_020.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_021.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_022.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_023.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_024.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_025.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_026.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_027.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_028.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_029.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_030.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_031.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_032.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_033.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_034.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_035.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_036.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_037.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_038.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_039.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_040.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_041.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_042.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_043.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_044.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_045.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_046.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_047.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_048.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_049.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_050.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_051.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_052.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_053.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_054.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_055.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_056.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_057.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_058.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_059.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_060.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_061.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_062.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_063.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_064.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/example_065.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/images/_blank.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/images/alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/images/image_demo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/images/image_with_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/images/img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/images/logo_example.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/images/logo_example.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/images/logo_example.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/images/tcpdf_box.ai" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/images/tcpdf_box.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/images/tcpdf_cell.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/images/tcpdf_logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/images/tcpdf_signature.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/images/testsvg.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/images/tux.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/afr.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/ara.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/aze.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/bel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/bra.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/bul.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/cat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/ces.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/chi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/cym.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/dan.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/eng.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/est.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/eus.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/far.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/fra.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/ger.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/gle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/glg.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/hat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/heb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/hrv.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/hun.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/hye.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/ind.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/ita.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/jpn.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/kat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/kor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/mkd.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/mlt.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/msa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/nld.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/nob.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/pol.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/por.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/ron.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/rus.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/slv.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/spa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/sqi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/srp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/swa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/swe.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/ukr.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/urd.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/yid.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/lang/zho.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/examples/tcpdf_include.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/ae_fonts_2.0/COPYING" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/ae_fonts_2.0/ChangeLog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/ae_fonts_2.0/ChangeLog.9745.BAK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/ae_fonts_2.0/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/aealarabiya.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/aealarabiya.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/aealarabiya.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/aefurat.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/aefurat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/aefurat.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/cid0cs.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/cid0ct.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/cid0jp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/cid0kr.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/courier.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/courierb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/courierbi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/courieri.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavu-fonts-ttf-2.33/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavu-fonts-ttf-2.33/BUGS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavu-fonts-ttf-2.33/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavu-fonts-ttf-2.33/NEWS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavu-fonts-ttf-2.33/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavu-fonts-ttf-2.33/langcover.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavu-fonts-ttf-2.33/status.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavu-fonts-ttf-2.33/unicover.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavu-fonts-ttf-2.34/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavu-fonts-ttf-2.34/BUGS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavu-fonts-ttf-2.34/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavu-fonts-ttf-2.34/NEWS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavu-fonts-ttf-2.34/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavu-fonts-ttf-2.34/langcover.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavu-fonts-ttf-2.34/status.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavu-fonts-ttf-2.34/unicover.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusans.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusans.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusans.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansb.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansb.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansbi.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansbi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansbi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusanscondensed.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusanscondensed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusanscondensed.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusanscondensedb.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusanscondensedb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusanscondensedb.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusanscondensedbi.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusanscondensedbi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusanscondensedbi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusanscondensedi.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusanscondensedi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusanscondensedi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansextralight.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansextralight.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansextralight.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansi.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansmono.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansmono.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansmono.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansmonob.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansmonob.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansmonob.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansmonobi.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansmonobi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansmonobi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansmonoi.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansmonoi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavusansmonoi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserif.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserif.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserif.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifb.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifb.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifbi.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifbi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifbi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifcondensed.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifcondensed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifcondensed.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifcondensedb.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifcondensedb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifcondensedb.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifcondensedbi.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifcondensedbi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifcondensedbi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifcondensedi.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifcondensedi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifcondensedi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifi.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/dejavuserifi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/droidsansfallback.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/droidsansfallback.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/droidsansfallback.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freefont-20100919/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freefont-20100919/COPYING" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freefont-20100919/CREDITS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freefont-20100919/ChangeLog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freefont-20100919/INSTALL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freefont-20100919/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freefont-20120503/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freefont-20120503/COPYING" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freefont-20120503/CREDITS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freefont-20120503/ChangeLog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freefont-20120503/ChangeLog.10070.BAK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freefont-20120503/INSTALL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freefont-20120503/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freefont-20120503/TROUBLESHOOTING" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freefont-20120503/USAGE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freemono.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freemono.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freemono.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freemonob.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freemonob.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freemonob.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freemonobi.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freemonobi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freemonobi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freemonoi.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freemonoi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freemonoi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freesans.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freesans.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freesans.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freesansb.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freesansb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freesansb.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freesansbi.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freesansbi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freesansbi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freesansi.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freesansi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freesansi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freeserif.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freeserif.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freeserif.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freeserifb.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freeserifb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freeserifb.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freeserifbi.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freeserifbi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freeserifbi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freeserifi.ctg.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freeserifi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/freeserifi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/helvetica.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/helveticab.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/helveticabi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/helveticai.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/hysmyeongjostdmedium.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/kozgopromedium.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/kozminproregular.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/msungstdlight.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfacourier.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfacourier.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfacourierb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfacourierb.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfacourierbi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfacourierbi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfacourieri.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfacourieri.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfahelvetica.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfahelvetica.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfahelveticab.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfahelveticab.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfahelveticabi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfahelveticabi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfahelveticai.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfahelveticai.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfasymbol.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfasymbol.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfatimes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfatimes.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfatimesb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfatimesb.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfatimesbi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfatimesbi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfatimesi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfatimesi.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfazapfdingbats.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/pdfazapfdingbats.z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/stsongstdlight.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/symbol.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/times.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/timesb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/timesbi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/timesi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/uni2cid_ac15.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/uni2cid_ag15.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/uni2cid_aj16.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/uni2cid_ak12.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/fonts/zapfdingbats.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/include/barcodes/datamatrix.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/include/barcodes/pdf417.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/include/barcodes/qrcode.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/include/sRGB.icc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/include/tcpdf_colors.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/include/tcpdf_filters.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/include/tcpdf_font_data.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/include/tcpdf_fonts.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/include/tcpdf_images.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/include/tcpdf_static.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/tcpdf_autoconfig.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/tcpdf_barcodes_1d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/tcpdf_barcodes_2d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/tcpdf_import.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/tcpdf_parser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/tools/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/tools/convert_fonts_examples.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/tcpdf/tools/tcpdf_addfont.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/wx/ReadMe.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/wx/Validate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/wx/demo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/wx/errorCode.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/wx/log-2017-08-01.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/wx/pkcs7Encoder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/wx/sha1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/wx/wxBizMsgCrypt.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/libraries/wx/xmlparse.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/Access_model.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/Base_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/Base_model.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/Bumen_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/Sms_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/Users_login_log_error_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/Users_login_log_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/Users_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/Users_update_log_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/Yuangong_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/Zidian_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/cache_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/captcha_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_admin_group_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_admin_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_auth_class_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_auth_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_category_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_cj_fabu_x_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_cmenu_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_co_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_fabu_x_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_goods_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_images_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_index_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_menu_att_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_menu_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_news_class_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_news_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_order_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/models/lm_user_mdl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/Uploader.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/webuploader.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/webuploader.custom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/webuploader.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/webuploader.fis.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/webuploader.flashonly.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/webuploader.flashonly.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/webuploader.html5only.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/webuploader.html5only.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/webuploader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/webuploader.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/webuploader.noimage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/webuploader.noimage.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/webuploader.nolog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/webuploader.nolog.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/webuploader.withoutimage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/api/webuploader.withoutimage.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com_party/packageJS/webuploader/index.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dg1ujsih0x.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/Benchmark.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/CodeIgniter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/Common.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/Config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/Controller.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/Exceptions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/Hooks.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/Input.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/Lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/Loader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/Log.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/Model.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/Output.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/Router.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/Security.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/URI.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/Utf8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/compat/hash.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/compat/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/compat/mbstring.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/compat/password.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/compat/standard.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/core/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/DB.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/DB_cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/DB_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/DB_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/DB_query_builder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/DB_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/DB_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/cubrid/cubrid_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/cubrid/cubrid_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/cubrid/cubrid_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/cubrid/cubrid_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/cubrid/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/ibase/ibase_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/ibase/ibase_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/ibase/ibase_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/ibase/ibase_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/ibase/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/mssql/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/mssql/mssql_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/mssql/mssql_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/mssql/mssql_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/mssql/mssql_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/mysql/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/mysql/mysql_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/mysql/mysql_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/mysql/mysql_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/mysql/mysql_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/mysqli/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/mysqli/mysqli_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/mysqli/mysqli_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/mysqli/mysqli_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/mysqli/mysqli_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/oci8/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/oci8/oci8_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/oci8/oci8_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/oci8/oci8_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/oci8/oci8_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/odbc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/odbc/odbc_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/odbc/odbc_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/odbc/odbc_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/odbc/odbc_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/pdo_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/pdo_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/pdo_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/pdo_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_4d_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_4d_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_cubrid_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_cubrid_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_dblib_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_dblib_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_firebird_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_firebird_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_ibm_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_ibm_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_informix_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_informix_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_mysql_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_mysql_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_oci_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_oci_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_odbc_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_odbc_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_pgsql_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_pgsql_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_sqlite_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_sqlite_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_sqlsrv_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/pdo/subdrivers/pdo_sqlsrv_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/postgre/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/postgre/postgre_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/postgre/postgre_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/postgre/postgre_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/postgre/postgre_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/sqlite/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/sqlite/sqlite_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/sqlite/sqlite_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/sqlite/sqlite_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/sqlite/sqlite_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/sqlite3/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/sqlite3/sqlite3_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/sqlite3/sqlite3_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/sqlite3/sqlite3_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/sqlite3/sqlite3_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/sqlsrv/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/sqlsrv/sqlsrv_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/sqlsrv/sqlsrv_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/sqlsrv/sqlsrv_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/drivers/sqlsrv/sqlsrv_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/database/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/fonts/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/fonts/texb.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/array_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/captcha_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/cookie_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/date_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/directory_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/download_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/email_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/file_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/form_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/html_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/inflector_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/language_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/number_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/path_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/security_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/smiley_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/string_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/text_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/typography_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/url_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/helpers/xml_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/english/calendar_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/english/date_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/english/db_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/english/email_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/english/form_validation_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/english/ftp_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/english/imglib_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/english/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/english/migration_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/english/number_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/english/pagination_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/english/profiler_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/english/unit_test_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/english/upload_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/simplified-chinese/calendar_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/simplified-chinese/date_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/simplified-chinese/db_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/simplified-chinese/email_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/simplified-chinese/form_validation_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/simplified-chinese/ftp_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/simplified-chinese/imglib_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/simplified-chinese/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/simplified-chinese/migration_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/simplified-chinese/number_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/simplified-chinese/pagination_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/simplified-chinese/profiler_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/simplified-chinese/unit_test_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/language/simplified-chinese/upload_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Cache/Cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Cache/drivers/Cache_apc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Cache/drivers/Cache_dummy.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Cache/drivers/Cache_file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Cache/drivers/Cache_memcached.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Cache/drivers/Cache_redis.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Cache/drivers/Cache_wincache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Cache/drivers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Cache/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Calendar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Cart.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Email.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Encrypt.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Encryption.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Form_validation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Ftp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Image_lib.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Javascript.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Javascript/Jquery.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Javascript/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Migration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Pagination.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Parser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Profiler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Session/Session.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Session/SessionHandlerInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Session/Session_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Session/drivers/Session_database_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Session/drivers/Session_files_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Session/drivers/Session_memcached_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Session/drivers/Session_redis_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Session/drivers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Session/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Trackback.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Typography.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Unit_test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Upload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/User_agent.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Xmlrpc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Xmlrpcs.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/Zip.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/framework/libraries/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/WdatePicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/calendar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/lang/en.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/lang/zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/lang/zh-tw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/skin/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/skin/WdatePicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/skin/datePicker.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/skin/default/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/skin/default/datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/skin/default/img.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/skin/whyGreen/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/skin/whyGreen/bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/skin/whyGreen/datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/skin/whyGreen/img.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/开发包/lang/en.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/开发包/lang/zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/开发包/lang/zh-tw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/开发包/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/开发包/skin/WdatePicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/开发包/skin/datePicker.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/开发包/skin/default/datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/开发包/skin/default/img.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/开发包/skin/whyGreen/bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/开发包/skin/whyGreen/datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/My97DatePicker/开发包/skin/whyGreen/img.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/css/admin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/css/public_con.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/css/复件 public_con.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/Submit_bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/addjs.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/admin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/admin_p.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/bt_login.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/del.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/edit.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/header_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/header_bgy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/header_left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/icon-demo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/icon-login-seaver.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/icon_add.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/icon_drop.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/icon_edit.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/icon_search.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/icon_view.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/information.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/lm_x.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/lm_y.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/lm_z.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/login-buttom-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/login-buttom-bg2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/login-content-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/login-top-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/login-top-bg2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/login-wel.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/login_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/login_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/login_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/login_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/login_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/login_6.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/login_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/logo2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/luck.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/menu_bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/menu_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/menu_bt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/menu_icon.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/right_smbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/shadow_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/skin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/skin1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/th_bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/title_bg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/title_bg2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/top-right.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/top_bt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/images/未标题-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/js/goods_add_ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/js/jquery-1.3.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/styles/general.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/admin/styles/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/cache/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/cache/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/config/autoload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/config/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/config/constants.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/config/database.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/config/doctypes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/config/foreign_chars.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/config/hooks.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/config/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/config/migration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/config/mimes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/config/profiler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/config/routes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/config/smileys.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/config/upload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/config/user_agents.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/Yuangong.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/admin_group.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/admin_lm.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/auth_lm.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/category.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/co.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/fabu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/goods.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/goodsmenu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/indexdefin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/lm.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/login.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/main.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/news.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/news_class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/order.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/controllers/user.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/core/LM_Controller.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/core/LM_Loader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/core/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/errors/error_404.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/errors/error_db.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/errors/error_general.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/errors/error_php.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/errors/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/helpers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/hooks/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/language/english/form_validation_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/language/english/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/libraries/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/logs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/models/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/third_party/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/admin_add.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/admin_group_add.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/admin_group_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/admin_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/admin_me.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/auth_add.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/auth_class_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/auth_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/body.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/category_add.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/category_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/category_update.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/cj_fabu_x_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/co_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/fabu_x_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/fabu_x_update.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/goods_add.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/goods_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/goodsmenu_add.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/goodsmenu_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/header.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/index_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/login.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/login2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/main.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/menu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/news_add.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/news_class_add.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/news_class_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/news_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/order_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/user_list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/adminlm/user_update.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/errors/cli/error_404.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/errors/cli/error_db.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/errors/cli/error_exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/errors/cli/error_general.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/errors/cli/error_php.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/errors/cli/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/errors/html/error_404.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/errors/html/error_db.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/errors/html/error_exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/errors/html/error_general.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/errors/html/error_php.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/errors/html/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/application/views/errors/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/lm_uploads/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/css/detail.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/css/global.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/css/layout.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/css/user.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/detailclose.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/detailfudong.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/detaillistbg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/detaillistbg2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/forget_submit.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/fudonginput.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/fudongsubmit.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/headernavbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/hezuo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/isclose.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/isclosebg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/listtopbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/liucheng.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/login_reg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/login_submit.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/login_submit.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/logo.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/navliright.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/qq.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/reg_submit.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/reg_submit.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/regimg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/score1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/score2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/search.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/searchbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/searchlisttop.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/searchlogo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/searchsubmit.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/searchsubmit.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/sina.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/user_left_top.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/user_left_top.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/webjb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/xuqiubg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/xuqiutopbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/yudingtel.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/images/yuyue.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/js/bigbig-big.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/js/bigbig.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/js/cat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/js/catyy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/js/huangdao.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/js/jquery-1.7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/js/lm-big.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/js/lm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew/js/scrollPic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/css/detail.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/css/global.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/css/layout.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/css/user.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/detailclose.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/detailfudong.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/detaillistbg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/detaillistbg2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/forget_submit.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/fudonginput.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/fudongsubmit.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/headernavbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/hezuo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/isclose.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/isclosebg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/listtopbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/liucheng.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/login_reg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/login_submit.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/navliright.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/qq.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/reg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/reg_submit.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/regimg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/score1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/score2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/search.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/searchbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/searchlisttop.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/searchlogo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/searchsubmit.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/sina.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/user_left_top.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/webjb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/xuqiubg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/xuqiutopbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/yudingtel.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/images/yuyue.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/js/bigbig-big.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/js/bigbig.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/js/cat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/js/catyy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/js/huangdao.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/js/jquery-1.7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/js/lm-big.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/js/lm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/js/scrollPic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/psd/mymeeting.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/psd/searchsubmit.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/psd/submit.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/themples/mynew2/psd/yuyue.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/changelog.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/database/active_record.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/database/caching.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/database/call_function.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/database/configuration.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/database/connecting.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/database/examples.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/database/fields.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/database/forge.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/database/helpers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/database/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/database/queries.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/database/results.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/database/table_data.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/database/transactions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/database/utilities.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/doc_style/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/doc_style/template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/alternative_php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/ancillary_classes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/autoloader.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/caching.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/cli.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/common_functions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/controllers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/core_classes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/creating_drivers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/creating_libraries.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/credits.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/drivers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/environments.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/errors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/helpers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/hooks.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/libraries.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/managing_apps.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/models.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/profiling.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/quick_reference.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/requirements.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/reserved_names.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/routing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/security.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/styleguide.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/urls.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/general/views.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/array_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/captcha_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/cookie_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/date_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/directory_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/download_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/email_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/file_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/form_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/html_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/inflector_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/language_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/number_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/path_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/security_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/smiley_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/string_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/text_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/typography_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/url_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/helpers/xml_helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/appflowchart.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/arrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/ci_logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/ci_logo_flame.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/ci_quick_ref.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/codeigniter_1.7.1_helper_reference.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/codeigniter_1.7.1_helper_reference.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/codeigniter_1.7.1_library_reference.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/codeigniter_1.7.1_library_reference.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/file.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/folder.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/nav_bg_darker.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/nav_separator_darker.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/nav_toggle_darker.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/reactor-bullet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/images/transparent.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/downloads.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/troubleshooting.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_120.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_130.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_131.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_132.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_133.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_140.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_141.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_150.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_152.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_153.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_154.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_160.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_161.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_162.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_163.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_170.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_171.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_172.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_200.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_201.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_202.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_203.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_210.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrade_b11.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/installation/upgrading.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/benchmark.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/caching.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/calendar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/cart.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/config.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/email.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/encryption.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/file_uploading.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/form_validation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/ftp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/image_lib.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/input.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/javascript.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/language.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/loader.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/migration.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/output.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/pagination.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/parser.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/security.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/sessions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/table.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/trackback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/typography.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/unit_testing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/uri.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/user_agent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/xmlrpc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/libraries/zip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/license.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/nav/hacks.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/nav/moo.fx.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/nav/nav.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/nav/prototype.lite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/nav/user_guide_menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/overview/appflow.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/overview/at_a_glance.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/overview/cheatsheets.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/overview/features.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/overview/getting_started.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/overview/goals.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/overview/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/overview/mvc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/toc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/tutorial/conclusion.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/tutorial/create_news_items.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/tutorial/hard_coded_pages.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/tutorial/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/tutorial/news_section.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/tutorial/static_pages.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/user_guide/userguide.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/triptt.sql" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/application/config/constants.php" afterPath="$PROJECT_DIR$/app/application/config/constants.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/application/config/postdata.php" afterPath="$PROJECT_DIR$/app/application/config/postdata.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/application/config/upload.php" afterPath="$PROJECT_DIR$/app/application/config/upload.php" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/controllers/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1900">
+              <caret line="76" column="50" lean-forward="false" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/controllers/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LM_Controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/core/LM_Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1600">
+              <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Admin_auth.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/libraries/Admin_auth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6900">
+              <caret line="276" column="25" lean-forward="false" selection-start-line="276" selection-start-column="25" selection-end-line="276" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_lm.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/application/controllers/admin_lm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="775">
+              <caret line="31" column="64" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1575">
+              <caret line="63" column="36" lean-forward="false" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lm_auth.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/libraries/Lm_auth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/views/adminlm/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/config/constants.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1250">
+              <caret line="50" column="63" lean-forward="false" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Lmauth</find>
+      <find>lmauth</find>
+      <find>auth</find>
+      <find>lm_admin</find>
+      <find>view(</find>
+      <find>is_login</find>
+      <find>user_id</find>
+      <find>$active_group</find>
+      <find>Auth</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/mike/libraries/Tuisong.php" />
+        <option value="$PROJECT_DIR$/admin/index.php" />
+        <option value="$PROJECT_DIR$/admin/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/admin/application/config/autoload.php" />
+        <option value="$PROJECT_DIR$/admin/application/config/database.php" />
+        <option value="$PROJECT_DIR$/admin/application/core/LM_Loader.php" />
+        <option value="$PROJECT_DIR$/admin/application/config/constants.php" />
+        <option value="$PROJECT_DIR$/admin/application/libraries/Auth.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/login.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/main.php" />
+        <option value="$PROJECT_DIR$/admin/application/core/LM_Controller.php" />
+        <option value="$PROJECT_DIR$/admin/application/libraries/Admin_auth.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/admin_lm.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/adminlm/menu.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="changfang-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="changfang-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="changfang-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="changfang-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="changfang-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="changfang-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="changfang-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="changfang-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="changfang-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="changfang-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="changfang-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="changfang-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="libraries" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="changfang-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="changfang-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="changfang-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="changfang-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adminlm" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="changfang-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="changfang-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mike" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="changfang-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="changfang-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mike" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="libraries" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eac90ae1-b072-4fb2-b1ae-6c06c42314e5" name="Default" comment="" />
+      <created>1516689121386</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1516689121386</updated>
+      <workItem from="1516689124426" duration="9256000" />
+      <workItem from="1516777558741" duration="1545000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10801000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/core/LM_Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1600">
+          <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/libraries/Admin_auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6900">
+          <caret line="276" column="25" lean-forward="false" selection-start-line="276" selection-start-column="25" selection-end-line="276" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/admin_lm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="63" column="36" lean-forward="false" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/libraries/Lm_auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/adminlm/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1250">
+          <caret line="50" column="63" lean-forward="false" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mike/libraries/umeng/IOSNotification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-158">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mike/libraries/umeng/UmengNotification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1333">
+          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mike/libraries/Tuisong.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="226" column="70" lean-forward="true" selection-start-line="226" selection-start-column="68" selection-end-line="226" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="99" column="29" lean-forward="false" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="40" column="46" lean-forward="false" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="66" lean-forward="false" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="54" column="51" lean-forward="false" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mike/libraries/auth.php" />
+    <entry file="file://$PROJECT_DIR$/admin/application/libraries/Lm_upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/libraries/Lm_session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding>
+            <marker date="1516698142610" expanded="true" signature="3164:3885" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="3293:3479" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="3325:3411" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="3419:3475" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="3562:3699" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="3891:3932" ph=" Checks if session has expired ..." />
+            <marker date="1516698142610" expanded="true" signature="3966:4222" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="4013:4076" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="4178:4202" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="4228:4424" ph=" Sets &quot;flash&quot; data which will be available only in next request (then it will ..." />
+            <marker date="1516698142610" expanded="true" signature="4484:4772" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="4514:4564" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="4592:4769" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="4660:4728" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="4778:4844" ph=" Keeps existing &quot;flash&quot; data available to next request. ..." />
+            <marker date="1516698142610" expanded="true" signature="4877:5075" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="5081:5132" ph=" Returns &quot;flash&quot; data for the given key. ..." />
+            <marker date="1516698142610" expanded="true" signature="5160:5250" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="5256:5336" ph=" PRIVATE: Internal method - marks &quot;flash&quot; session attributes as 'old' ..." />
+            <marker date="1516698142610" expanded="true" signature="5366:5645" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="5410:5642" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="5498:5638" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="5651:5729" ph=" PRIVATE: Internal method - removes &quot;flash&quot; session marked as 'old' ..." />
+            <marker date="1516698142610" expanded="true" signature="5760:5976" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="5804:5973" ph="{...}" />
+            <marker date="1516698142610" expanded="true" signature="5925:5969" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/core/Loader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="494" column="135" lean-forward="true" selection-start-line="494" selection-start-column="8" selection-end-line="494" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/core/LM_Loader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/adminlm/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1250">
+          <caret line="50" column="63" lean-forward="false" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/libraries/Auth.php" />
+    <entry file="file://$PROJECT_DIR$/admin/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="63" column="36" lean-forward="false" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1900">
+          <caret line="76" column="50" lean-forward="false" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/libraries/Admin_auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6900">
+          <caret line="276" column="25" lean-forward="false" selection-start-line="276" selection-start-column="25" selection-end-line="276" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/core/LM_Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1600">
+          <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/libraries/Lm_auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/adminlm/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="161" column="8" lean-forward="true" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/admin_lm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="31" column="64" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

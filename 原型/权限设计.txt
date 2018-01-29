@@ -1,0 +1,24 @@
+权限：
+
+
+1、功能权限-节点：
+控制器
+	增
+	删（自己）
+	改（自己）
+	查
+	删（所有人）
+	改（所有人）
+
+2、数据权限-指定数据字段
+如：
+	公司ID (gs_id:[1, 2,3]) -空为所有
+	商品分类ID (cat_id:[1,5,8]) - 空为所有
+【
+SQL全部封装为model
+如果当前表中有该‘数字权限字段’，并且该用户权限不为空。则增加 and xxx in (is_list)
+query()封装为 query(sql, order, limit, offset)，得  if(auth) sql .= and xxx in (is_list)   ORDER LIMIT OFFSET
+get_result和get_row 同上
+update_row同上
+】
+

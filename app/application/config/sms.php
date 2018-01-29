@@ -13,12 +13,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$config['postdata'] = array(
-            'version'   => array(
-                            'ios'=> array('1.0', '1.0'),//每次升级只需要增加一个值即可
-                            'andriod'=> array('1.0', )
-                            ),
-            'apptype'   => array('ios', 'andriod'),
-			'time'		=> '',
-			'sign'		=> '',
+//短信模板code
+$config['sms']['TemplateCode'] = array(
+            'forgot_password'   => 'SMS_118140009',//忘记密码时 发送短信
+            
         );  
